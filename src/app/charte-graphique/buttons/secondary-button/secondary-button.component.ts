@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { PrimaryButtonType } from '../primary-button/primary-button.type';
+import { SecondaryButtonType } from './secondary-button.type';
 
 @Component({
   selector: 'cca-secondary-button',
@@ -8,6 +8,6 @@ import { PrimaryButtonType } from '../primary-button/primary-button.type';
 })
 export class SecondaryButtonComponent {
 
-  @Input() type: PrimaryButtonType = 'primary';
+  @Input() type: SecondaryButtonType = 'primary';
 
 }
