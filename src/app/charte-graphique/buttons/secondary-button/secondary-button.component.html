@@ -1,0 +1,20 @@
+
+<button mat-stroked-button *ngIf="type === 'primary'"  color='primary'>
+	<ng-content></ng-content>
+</button>
+
+<button mat-stroked-button *ngIf="type === 'accent'"  color='accent'>
+	<ng-content></ng-content>
+</button>
+
+<button mat-stroked-button *ngIf="type === 'warn'"  color='warn'>
+	<ng-content></ng-content>
+</button>
+
+<button mat-stroked-button *ngIf="type === 'disabled'" disabled>
+	<ng-content></ng-content>
+</button>
+
+<button mat-stroked-button *ngIf="type === 'perso'"  class="cca-secondary-button">
+	<ng-content></ng-content>
+</button>

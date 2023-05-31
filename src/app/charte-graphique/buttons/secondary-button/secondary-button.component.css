@@ -1,0 +1,3 @@
+    .cca-secondary-button{
+        @apply bg-white text-white border-gray-500 border-2 rounded-md px-4 py-2;
+    }

@@ -1,0 +1,20 @@
+
+<button mat-raised-button *ngIf="type === 'primary'"  color='primary'>
+	<ng-content></ng-content>
+</button>
+
+<button mat-raised-button *ngIf="type === 'accent'"  color='accent'>
+	<ng-content></ng-content>
+</button>
+
+<button mat-raised-button *ngIf="type === 'warn'"  color='warn'>
+	<ng-content></ng-content>
+</button>
+
+<button mat-raised-button *ngIf="type === 'disabled'" disabled>
+	<ng-content></ng-content>
+</button>
+
+<button mat-raised-button *ngIf="type === 'perso'"  class="cca-primary-button">
+	<ng-content></ng-content>
+</button>
