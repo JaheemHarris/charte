@@ -1,0 +1,8 @@
+<mat-form-field class="example-full-width" *ngIf="type === 'primary'">
+  <mat-label>Favorite food</mat-label>
+  <input matInput [placeholder]="placeholder">
+</mat-form-field>
+<mat-form-field class="example-full-width" *ngIf="type === 'second'">
+  <mat-label>Leave a comment</mat-label>
+  <textarea matInput [placeholder]="placeholder"></textarea>
+</mat-form-field>

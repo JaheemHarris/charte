@@ -15,8 +15,7 @@ import { ButtonsModule } from './charte-graphique/buttons/buttons.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule,
-    ButtonsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

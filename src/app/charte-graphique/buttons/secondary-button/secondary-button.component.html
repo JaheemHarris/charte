@@ -1,29 +1,24 @@
-<button mat-strocked-button *ngIf="type === 'primary'" color='primary'>
-    <ng-container *ngIf="type === 'primary'">
-        <ng-content></ng-content>
-    </ng-container>
+<button mat-stroked-button *ngIf="type === 'primary'" color="primary">
+    <ng-template *ngIf="type === 'primary'" [ngTemplateOutlet]="contentTemplate"></ng-template>
 </button>
 
-<button mat-strocked-button *ngIf="type === 'accent'" color='accent'>
-    <ng-container *ngIf="type === 'accent'">
-        <ng-content></ng-content>
-    </ng-container>
+<button mat-stroked-button *ngIf="type === 'accent'" color="accent">
+    <ng-template *ngIf="type === 'accent'" [ngTemplateOutlet]="contentTemplate"></ng-template>
 </button>
 
-<button mat-strocked-button *ngIf="type === 'warn'" color='warn'>
-    <ng-container *ngIf="type === 'warn'">
-        <ng-content></ng-content>
-    </ng-container>
+<button mat-stroked-button *ngIf="type === 'warn'" color="warn">
+    <ng-template *ngIf="type === 'warn'" [ngTemplateOutlet]="contentTemplate"></ng-template>
 </button>
 
-<button mat-strocked-button *ngIf="type === 'disabled'" disabled>
-    <ng-container *ngIf="type === 'disabled'">
-        <ng-content></ng-content>
-    </ng-container>
+<button mat-stroked-button *ngIf="type === 'disabled'" disabled>
+    <ng-template *ngIf="type === 'disabled'" [ngTemplateOutlet]="contentTemplate"></ng-template>
 </button>
 
-<button mat-strocked-button *ngIf="type === 'perso'" class="cca-secondary-button">
-    <ng-container *ngIf="type === 'perso'">
-        <ng-content></ng-content>
-    </ng-container>
+<button mat-stroked-button *ngIf="type === 'perso'"
+    class="cca-secondary-button border border-gray-500 rounded-md px-4 py-2 bg-white text text-green-500 hover:bg-green-500 hover:text-white">
+    <ng-template *ngIf="type === 'perso'" [ngTemplateOutlet]="contentTemplate"></ng-template>
 </button>
+
+<ng-template #contentTemplate>
+    <ng-content></ng-content>
+</ng-template>

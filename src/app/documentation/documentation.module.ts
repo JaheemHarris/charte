@@ -7,6 +7,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { ButtonsModule } from '../charte-graphique/buttons/buttons.module';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatIconModule} from '@angular/material/icon';
+import { IconModule } from '../charte-graphique/icon/icon.module';
+import { BasicInputModule } from '../charte-graphique/input/basic-input/basic-input.module';
 
 @NgModule({
   imports: [
@@ -16,7 +18,9 @@ import {MatIconModule} from '@angular/material/icon';
     MatButtonModule,
     MatSidenavModule,
     MatDividerModule,
-    MatIconModule
+    MatIconModule,
+    IconModule,
+    BasicInputModule
   ],
   declarations: [DocumentationComponent]
 })

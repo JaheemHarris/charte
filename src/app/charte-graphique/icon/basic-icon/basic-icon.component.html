@@ -1,0 +1,15 @@
+<button mat-icon-button *ngIf="type === 'primary'" [color]="'primary'">
+  <mat-icon>more_vert</mat-icon>
+</button>
+<button mat-icon-button *ngIf="type === 'home'" [color]="'primary'">
+  <mat-icon>home</mat-icon>
+</button>
+<button mat-icon-button *ngIf="type === 'accent'" [color]="'accent'">
+  <mat-icon>menu</mat-icon>
+</button>
+<button mat-icon-button *ngIf="type === 'warn'" [color]="'warn'">
+  <mat-icon>favorite</mat-icon>
+</button>
+<button mat-icon-button *ngIf="type === 'disabled'" [disabled]="true">
+  <mat-icon>open_in_new</mat-icon>
+</button>
