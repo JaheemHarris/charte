@@ -1,21 +1,28 @@
 <mat-drawer-container class="example-container">
-  <mat-drawer mode="side" opened>Drawer content</mat-drawer>
+  <mat-drawer mode="side" opened><span>_______</span></mat-drawer>
   <mat-drawer-content>
-    <div class="grid grid-cols-3 gap-4">
-      <cca-primary-button [type]="'primary'">Primary</cca-primary-button>
-      <cca-primary-button [type]="'accent'">Accent</cca-primary-button>
-      <cca-primary-button [type]="'warn'">Warning</cca-primary-button>
-      <cca-primary-button [type]="'disabled'">Disabled</cca-primary-button>
-      <cca-primary-button [type]="'perso'">Perso</cca-primary-button>
-    </div>
-  </mat-drawer-content>
-  <mat-drawer-content>
-    <div class="grid grid-cols-3 gap-4">
-      <cca-secondary-button [type]="'primary'">Primary</cca-secondary-button>
-      <cca-secondary-button [type]="'accent'">Accent</cca-secondary-button>
-      <cca-secondary-button [type]="'warn'">Warning</cca-secondary-button>
-      <cca-secondary-button [type]="'disabled'">Disabled</cca-secondary-button>
-      <cca-secondary-button [type]="'perso'">Perso</cca-secondary-button>
-    </div>
+    <section>
+      <div class="example-label">Principale</div>
+      <div class="example-button-row">
+        <cca-primary-button [type]="'primary'">Primary</cca-primary-button>
+        <cca-primary-button [type]="'accent'">Accent</cca-primary-button>
+        <cca-primary-button [type]="'warn'">Warning</cca-primary-button>
+        <cca-primary-button [type]="'disabled'">Disabled</cca-primary-button>
+        <cca-primary-button [type]="'perso'">Perso</cca-primary-button>
+      </div>
+    </section>
+    <mat-divider></mat-divider>
+    <section>
+      <div class="example-label">Second</div>
+      <div class="example-button-row">
+         <cca-secondary-button [type]="'primary'">Primary</cca-secondary-button>
+          <cca-secondary-button [type]="'accent'">Accent</cca-secondary-button>
+          <cca-secondary-button [type]="'warn'">Warning</cca-secondary-button>
+          <cca-secondary-button [type]="'disabled'">Disabled</cca-secondary-button>
+          <cca-secondary-button [type]="'perso'">Perso</cca-secondary-button>
+      </div>
+    </section>
+    <mat-divider></mat-divider>
   </mat-drawer-content>
 </mat-drawer-container>
+
