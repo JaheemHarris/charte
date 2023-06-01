@@ -13,6 +13,7 @@ import { CheckboxModule } from '../charte-graphique/input/checkbox/checkbox.modu
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { CheckRoundModule } from '../charte-graphique/input/check-round/check-round.module';
 import { OutlineInputModule } from '../charte-graphique/input/outline-input/outline-input.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -28,7 +29,8 @@ import { OutlineInputModule } from '../charte-graphique/input/outline-input/outl
     CheckboxModule,
     MatToolbarModule,
     CheckRoundModule,
-    OutlineInputModule
+    OutlineInputModule,
+    FormsModule
   ],
   declarations: [DocumentationComponent]
 })
