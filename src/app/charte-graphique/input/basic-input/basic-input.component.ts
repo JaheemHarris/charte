@@ -9,6 +9,7 @@ export class BasicInputComponent implements OnInit {
 
   @Input() type: string = 'primary';
   @Input() placeholder: string = '';
+  @Input() label: string = '';
 
   constructor() { }
 

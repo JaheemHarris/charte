@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 module.exports = {
   theme: {
     extend: {
@@ -17,10 +18,10 @@ module.exports = {
         poppins: ['Poppins', 'sans-serif'],
       },
       fontWeight: {
-        400: '400',
-        600: '600',
-        700: '700',
-        900: '900',
+        '400': '400',
+        '600': '600',
+        '700': '700',
+        '900': '900',
       },
       fontSize: {
         '14': '14px',
@@ -36,4 +37,3 @@ module.exports = {
   variants: {},
   plugins: [],
 };
-

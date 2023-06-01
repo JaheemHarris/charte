@@ -9,6 +9,8 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatIconModule} from '@angular/material/icon';
 import { IconModule } from '../charte-graphique/icon/icon.module';
 import { BasicInputModule } from '../charte-graphique/input/basic-input/basic-input.module';
+import { CheckboxModule } from '../charte-graphique/input/checkbox/checkbox.module';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 @NgModule({
   imports: [
@@ -20,7 +22,9 @@ import { BasicInputModule } from '../charte-graphique/input/basic-input/basic-in
     MatDividerModule,
     MatIconModule,
     IconModule,
-    BasicInputModule
+    BasicInputModule,
+    CheckboxModule,
+    MatToolbarModule
   ],
   declarations: [DocumentationComponent]
 })

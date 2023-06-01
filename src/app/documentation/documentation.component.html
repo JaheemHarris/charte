@@ -1,3 +1,6 @@
+<mat-toolbar>
+  <span><b>CHARTE GRAPHIQUE</b></span>
+</mat-toolbar>
 <mat-divider></mat-divider>
 <br>
 <section>
@@ -48,6 +51,7 @@
       <cca-icon-fab [type]="'primary'"></cca-icon-fab>
       <cca-icon-fab [type]="'accent'"></cca-icon-fab>
       <cca-icon-fab [type]="'warn'"></cca-icon-fab>
+      <cca-icon-fab [type]="'perso'"></cca-icon-fab>
       <cca-icon-fab [type]="'disabled'"></cca-icon-fab>
     </div>
   </div>
@@ -62,6 +66,7 @@
       <cca-icon-mini-fab [type]="'primary'"></cca-icon-mini-fab>
       <cca-icon-mini-fab [type]="'accent'"></cca-icon-mini-fab>
       <cca-icon-mini-fab [type]="'warn'"></cca-icon-mini-fab>
+      <cca-icon-mini-fab [type]="'perso'"></cca-icon-mini-fab>
       <cca-icon-mini-fab [type]="'disabled'"></cca-icon-mini-fab>
     </div>
   </div>
@@ -73,8 +78,23 @@
   <div class="example-label">input basic</div>
   <div class="example-button-row">
     <div class="example-flex-container">
-      <cca-basic-input [placeholder]="'this is pizza'" [type]="'primary'"></cca-basic-input>
-      <cca-basic-input [placeholder]="'second placeholder'" [type]="'second'"></cca-basic-input>
+      <cca-basic-input [label]="'favorite food'" [placeholder]="'this is pizza'" [type]="'primary'"></cca-basic-input>
+      <cca-basic-input [label]="'second label'" [placeholder]="'second placeholder'" [type]="'second'"></cca-basic-input>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label">input checkbox</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <cca-checkbox  [type]="'primary'" [label]="'check primary'"></cca-checkbox>
+      <cca-checkbox  [type]="'accent'" [label]="'check accent'"></cca-checkbox>
+      <cca-checkbox  [type]="'warn'" [label]="'check warn'"></cca-checkbox>
+      <cca-checkbox  [type]="'perso'" [label]="'check personalise'"></cca-checkbox>
+      <cca-checkbox  [type]="'disabled'" [label]="'check disable'"></cca-checkbox>
     </div>
   </div>
 </section>
