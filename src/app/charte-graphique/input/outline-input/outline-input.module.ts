@@ -1,18 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BasicInputComponent } from './basic-input.component';
+import { OutlineInputComponent } from './outline-input.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import {FormControl, FormsModule} from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
     MatInputModule,
-    MatFormFieldModule,
-    FormsModule
+    MatFormFieldModule
   ],
-  declarations: [BasicInputComponent],
-  exports: [BasicInputComponent]
+  declarations: [OutlineInputComponent],
+  exports: [OutlineInputComponent]
 })
-export class BasicInputModule { }
+export class OutlineInputModule { }

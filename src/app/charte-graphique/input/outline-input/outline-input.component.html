@@ -1,0 +1,9 @@
+<form class="outline-input">
+  <mat-form-field class="example-full-width" appearance="outline" *ngIf="type === 'simple'">
+    <input matInput [placeholder]="placeholder">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" appearance="outline" *ngIf="type === 'text'">
+    <textarea matInput [placeholder]="placeholder"></textarea>
+  </mat-form-field>
+</form>

@@ -11,6 +11,8 @@ import { IconModule } from '../charte-graphique/icon/icon.module';
 import { BasicInputModule } from '../charte-graphique/input/basic-input/basic-input.module';
 import { CheckboxModule } from '../charte-graphique/input/checkbox/checkbox.module';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { CheckRoundModule } from '../charte-graphique/input/check-round/check-round.module';
+import { OutlineInputModule } from '../charte-graphique/input/outline-input/outline-input.module';
 
 @NgModule({
   imports: [
@@ -24,7 +26,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     IconModule,
     BasicInputModule,
     CheckboxModule,
-    MatToolbarModule
+    MatToolbarModule,
+    CheckRoundModule,
+    OutlineInputModule
   ],
   declarations: [DocumentationComponent]
 })

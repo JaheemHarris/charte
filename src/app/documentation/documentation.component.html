@@ -1,5 +1,5 @@
 <mat-toolbar>
-  <span><b>CHARTE GRAPHIQUE</b></span>
+  <span class="bg-gray text-gray-100"><b>CHARTE GRAPHIQUE</b></span>
 </mat-toolbar>
 <mat-divider></mat-divider>
 <br>
@@ -75,11 +75,43 @@
 <mat-divider></mat-divider>
 <br>
 <section>
-  <div class="example-label">input basic</div>
+  <div class="example-label"> basic simple</div>
   <div class="example-button-row">
     <div class="example-flex-container">
-      <cca-basic-input [label]="'favorite food'" [placeholder]="'this is pizza'" [type]="'primary'"></cca-basic-input>
-      <cca-basic-input [label]="'second label'" [placeholder]="'second placeholder'" [type]="'second'"></cca-basic-input>
+      <cca-basic-input [label]="'favorite food'" [placeholder]="'this is pizza'" [type]="'basic'"></cca-basic-input>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label"> basic text</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <cca-basic-input [label]="'second label'" [placeholder]="'second placeholder'" [type]="'text'"></cca-basic-input>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label"> outline simple</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <cca-outline-input [placeholder]="'placeholder'" [type]="'simple'"></cca-outline-input>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label"> outline text</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <cca-outline-input [placeholder]="'placeholder'" [type]="'text'"></cca-outline-input>
     </div>
   </div>
 </section>
@@ -98,3 +130,23 @@
     </div>
   </div>
 </section>
+<br>
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label">input radio</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <cca-check-round  [type]="'primary'"></cca-check-round>
+      <cca-check-round  [type]="'accent'"></cca-check-round>
+      <cca-check-round  [type]="'warn'"></cca-check-round>
+    </div>
+  </div>
+</section>
+
+<p class="text-sm ...">The quick brown fox ...</p>
+<p class="text-base ...">The quick brown fox ...</p>
+<p class="text-lg ...">The quick brown fox ...</p>
+<p class="text-xl ...">The quick brown fox ...</p>
+<p class="text-3xl">The quick brown fox ...</p>
+<p class="bg-gray text-gray">testetsttts</p>

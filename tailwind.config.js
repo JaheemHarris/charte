@@ -13,6 +13,11 @@ module.exports = {
         neutral3: '#8494a4',
         neutral2: '#ced7df',
         neutral1: '#f2f4f8',
+        'text-gray': {
+          100: '#000000',
+          // ...
+          900: '#1a202c',
+          },
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
@@ -24,6 +29,7 @@ module.exports = {
         '900': '900',
       },
       fontSize: {
+        '3xl': '3.5rem',
         '14': '14px',
         '16': '16px',
         '18': '18px',
