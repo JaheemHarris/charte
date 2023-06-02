@@ -14,7 +14,7 @@ module.exports = {
         neutral2: '#ced7df',
         neutral1: '#f2f4f8',
         'text-gray': {
-          100: '#000000',
+          100: '#f2f4f8',
           // ...
           900: '#1a202c',
           },

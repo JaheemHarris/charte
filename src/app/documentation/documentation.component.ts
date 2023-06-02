@@ -14,6 +14,7 @@ export class DocumentationComponent implements OnInit {
     {value: '3', viewValue: 'Panini'}
   ];
   inputValue: string = '';
+  inputValueText: string = '';
 
   constructor() { }
   
@@ -27,6 +28,12 @@ export class DocumentationComponent implements OnInit {
   onInputValueChanged(value: string) {
     this.inputValue = value;
     console.log('Input value:', this.inputValue);
+    // Faites autre chose avec la valeur de l'input
+  }
+
+  onInputValueChangedtext(value: string) {
+    this.inputValueText = value;
+    console.log('Input value Text:', this.inputValueText);
     // Faites autre chose avec la valeur de l'input
   }
 
