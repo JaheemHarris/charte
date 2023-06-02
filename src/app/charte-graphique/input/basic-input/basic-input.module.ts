@@ -4,13 +4,15 @@ import { BasicInputComponent } from './basic-input.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormControl, FormsModule} from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   imports: [
     CommonModule,
     MatInputModule,
     MatFormFieldModule,
-    FormsModule
+    FormsModule,
+    MatIconModule
   ],
   declarations: [BasicInputComponent],
   exports: [BasicInputComponent]

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'cca-basic-input',
@@ -10,6 +10,19 @@ export class BasicInputComponent implements OnInit {
   @Input() type: string = 'primary';
   @Input() placeholder: string = '';
   @Input() label: string = '';
+  @Output() valueChanged: EventEmitter<string> = new EventEmitter<string>();
+  inputValue: string = '';
+
+  onInputChange(event: Event) {
+    const value = (event.target as HTMLInputElement).value;
+    this.inputValue = value;
+    this.valueChanged.emit(this.inputValue);
+  }
+
+  clearInput() {  
+    this.inputValue = '';
+    this.valueChanged.emit(this.inputValue);
+  }
 
   constructor() { }
 

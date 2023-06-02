@@ -6,11 +6,11 @@
 <section>
   <div class="example-label">Principale</div>
   <div class="example-button-row">
-    <cca-primary-button [type]="'primary'">Primary</cca-primary-button>
-    <cca-primary-button [type]="'accent'">Accent</cca-primary-button>
-    <cca-primary-button [type]="'warn'">Warning</cca-primary-button>
-    <cca-primary-button [type]="'disabled'">Disabled</cca-primary-button>
-    <cca-primary-button [type]="'perso'">Perso</cca-primary-button>
+    <flat-button-primary [type]="'primary'">Primary</flat-button-primary>
+    <flat-button-primary [type]="'accent'">Accent</flat-button-primary>
+    <flat-button-primary [type]="'warn'">Warning</flat-button-primary>
+    <flat-button-primary [type]="'disabled'">Disabled</flat-button-primary>
+    <flat-button-primary [type]="'perso'">Perso</flat-button-primary>
   </div>
 </section>
 <br>
@@ -19,11 +19,11 @@
 <section>
   <div class="example-label">Second</div>
   <div class="example-button-row">
-    <cca-secondary-button [type]="'primary'">Primary</cca-secondary-button>
-    <cca-secondary-button [type]="'accent'">Accent</cca-secondary-button>
-    <cca-secondary-button [type]="'warn'">Warning</cca-secondary-button>
-    <cca-secondary-button [type]="'disabled'">Disabled</cca-secondary-button>
-    <cca-secondary-button [type]="'perso'">Perso</cca-secondary-button>
+    <flat-button-secondary [type]="'primary'">Primary</flat-button-secondary>
+    <flat-button-secondary [type]="'accent'">Accent</flat-button-secondary>
+    <flat-button-secondary [type]="'warn'">Warning</flat-button-secondary>
+    <flat-button-secondary [type]="'disabled'">Disabled</flat-button-secondary>
+    <flat-button-secondary [type]="'perso'">Perso</flat-button-secondary>
   </div>
 </section>
 <br>
@@ -78,7 +78,7 @@
   <div class="example-label"> basic simple</div>
   <div class="example-button-row">
     <div class="example-flex-container">
-      <cca-basic-input [label]="'favorite food'" [placeholder]="'this is pizza'" [type]="'basic'"></cca-basic-input>
+      <cca-basic-input [label]="'favorite food'" [placeholder]="'this is pizza'" [type]="'basic'" (valueChanged)="onInputValueChanged($event)"></cca-basic-input>
     </div>
   </div>
 </section>
@@ -112,6 +112,17 @@
   <div class="example-button-row">
     <div class="example-flex-container">
       <cca-outline-input [placeholder]="'placeholder'" [type]="'text'"></cca-outline-input>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label"> select simple</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <cca-select-simple [label]="'select simple'" [list]="list" (valueChange)="onValueChange($event)"></cca-select-simple>
     </div>
   </div>
 </section>

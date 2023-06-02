@@ -6,14 +6,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./documentation.component.css']
 })
 export class DocumentationComponent implements OnInit {
-  favoriteFood: any = 123;
+  
+  list: any[] = [
+    {value: '0', viewValue: 'Steak'},
+    {value: '1', viewValue: 'Pizza'},
+    {value: '2', viewValue: 'Tacos'},
+    {value: '3', viewValue: 'Panini'}
+  ];
+  inputValue: string = '';
 
   constructor() { }
-
-  haha() {
-    console.log('Nouvelle valeur de favoriteFood :', this.favoriteFood);
-  }
-
+  
   ngOnInit() {}
+  
+  onValueChange(value: any) {
+    console.log('Selected value:', value);
+    // Faites ce que vous voulez avec la valeur sélectionnée ici
+  }
+  
+  onInputValueChanged(value: string) {
+    this.inputValue = value;
+    console.log('Input value:', this.inputValue);
+    // Faites autre chose avec la valeur de l'input
+  }
 
 }
