@@ -18,9 +18,17 @@ export class DocumentationComponent implements OnInit {
   inputOutValueText: string ='';
   inputOutValueSimple: string ='';
 
+  selectedDate!: Date | null;
+
   constructor() { }
   
   ngOnInit() {}
+
+  onDateSelected(date: Date | null) {
+    if (date) {
+      this.selectedDate = date;
+    }
+  }
   
   onValueChange(value: any) {
     console.log('Selected value:', value);

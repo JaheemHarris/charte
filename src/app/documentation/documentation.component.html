@@ -6,11 +6,11 @@
 <section>
   <div class="example-label">Principale</div>
   <div class="example-button-row">
-    <flat-button-primary [type]="'primary'">Primary</flat-button-primary>
-    <flat-button-primary [type]="'accent'">Accent</flat-button-primary>
-    <flat-button-primary [type]="'warn'">Warning</flat-button-primary>
-    <flat-button-primary [type]="'disabled'">Disabled</flat-button-primary>
-    <flat-button-primary [type]="'perso'">Perso</flat-button-primary>
+    <flat-button-primary [type]="'primary'" [icon]="'save'">Primary</flat-button-primary>
+    <flat-button-primary [type]="'accent'" [icon]="'bookmark'">Accent</flat-button-primary>
+    <flat-button-primary [type]="'warn'" [icon]="'warning'">Warning</flat-button-primary>
+    <flat-button-primary [type]="'disabled'" [icon]="'accessibility'">Disabled</flat-button-primary>
+    <flat-button-primary [type]="'perso'" [icon]="'add'">Perso</flat-button-primary>
   </div>
 </section>
 <br>
@@ -19,11 +19,11 @@
 <section>
   <div class="example-label">Second</div>
   <div class="example-button-row">
-    <flat-button-secondary [type]="'primary'">Primary</flat-button-secondary>
-    <flat-button-secondary [type]="'accent'">Accent</flat-button-secondary>
-    <flat-button-secondary [type]="'warn'">Warning</flat-button-secondary>
+    <flat-button-secondary [type]="'primary'" [icon]="'bookmark'">Primary</flat-button-secondary>
+    <flat-button-secondary [type]="'accent'" [icon]="'cancel'">Accent</flat-button-secondary>
+    <flat-button-secondary [type]="'warn'" [icon]="'warning'">Warning</flat-button-secondary>
     <flat-button-secondary [type]="'disabled'">Disabled</flat-button-secondary>
-    <flat-button-secondary [type]="'perso'">Perso</flat-button-secondary>
+    <flat-button-secondary [type]="'perso'">Cancel</flat-button-secondary>
   </div>
 </section>
 <br>
@@ -91,7 +91,7 @@
   <div class="example-label"> basic simple</div>
   <div class="example-button-row">
     <div class="example-flex-container">
-      <cca-basic-input [label]="'favorite food'" [placeholder]="'this is pizza'" [type]="'basic'" (valueChanged)="onInputValueChanged($event)"></cca-basic-input>
+      <cca-basic-input [label]="'favorite food'" [widthInput] ="'500'" [placeholder]="'this is pizza'" [type]="'basic'" (valueChanged)="onInputValueChanged($event)"></cca-basic-input>
     </div>
   </div>
 </section>
@@ -102,7 +102,7 @@
   <div class="example-label"> basic text</div>
   <div class="example-button-row">
     <div class="example-flex-container">
-      <cca-basic-input [label]="'second label'" [placeholder]="'second placeholder'" [type]="'text'" (valueChanged)="onInputValueChangedtext($event)"></cca-basic-input>
+      <cca-basic-input [label]="'second label'" [widthInput] ="'1000'" [placeholder]="'second placeholder'" [type]="'text'" (valueChanged)="onInputValueChangedtext($event)"></cca-basic-input>
     </div>
   </div>
 </section>
@@ -113,7 +113,7 @@
   <div class="example-label"> outline simple</div>
   <div class="example-button-row">
     <div class="example-flex-container">
-      <cca-outline-input [placeholder]="'placeholder'" [type]="'simple'" (valueChanged)="onInputValueChangedSimple($event)"></cca-outline-input>
+      <cca-outline-input [placeholder]="'placeholder'" [widthInput] ="'700'" [type]="'simple'" (valueChanged)="onInputValueChangedSimple($event)"></cca-outline-input>
     </div>
   </div>
 </section>
@@ -124,7 +124,18 @@
   <div class="example-label"> outline text</div>
   <div class="example-button-row">
     <div class="example-flex-container">
-      <cca-outline-input [placeholder]="'placeholder'" [type]="'text'" (valueChanged)="onInputValueChangedOutText($event)"></cca-outline-input>
+      <cca-outline-input [placeholder]="'placeholder'" [type]="'text'" [widthInput] ="'800'" (valueChanged)="onInputValueChangedOutText($event)"></cca-outline-input>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label"> Date Picker</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <!-- <cca-Date-picker (dateSelected)="onDateSelected($event)"></cca-Date-picker> -->
     </div>
   </div>
 </section>

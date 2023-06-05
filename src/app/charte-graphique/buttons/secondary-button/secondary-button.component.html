@@ -1,21 +1,25 @@
 <button mat-stroked-button *ngIf="type === 'primary'" color="primary">
+    <mat-icon *ngIf="icon !== ''" >{{icon}}</mat-icon>
     <ng-template *ngIf="type === 'primary'" [ngTemplateOutlet]="contentTemplate"></ng-template>
 </button>
 
 <button mat-stroked-button *ngIf="type === 'accent'" color="accent">
+    <mat-icon *ngIf="icon !== ''" >{{icon}}</mat-icon>
     <ng-template *ngIf="type === 'accent'" [ngTemplateOutlet]="contentTemplate"></ng-template>
 </button>
 
 <button mat-stroked-button *ngIf="type === 'warn'" color="warn">
+    <mat-icon *ngIf="icon !== ''" >{{icon}}</mat-icon>
     <ng-template *ngIf="type === 'warn'" [ngTemplateOutlet]="contentTemplate"></ng-template>
 </button>
 
 <button mat-stroked-button *ngIf="type === 'disabled'" disabled>
+    <mat-icon *ngIf="icon !== ''" >{{icon}}</mat-icon>
     <ng-template *ngIf="type === 'disabled'" [ngTemplateOutlet]="contentTemplate"></ng-template>
 </button>
 
-<button mat-stroked-button *ngIf="type === 'perso'" 
-    class="cca-secondary-button border border-gray-500 rounded-md px-4 py-2 bg-white text text-green-500 hover:bg-green-500 hover:text-white">
+<button mat-stroked-button *ngIf="type === 'perso'" class="cca-second-button">
+    <mat-icon *ngIf="icon !== ''" >{{icon}}</mat-icon>
     <ng-template *ngIf="type === 'perso'" [ngTemplateOutlet]="contentTemplate"></ng-template>
 </button>
 

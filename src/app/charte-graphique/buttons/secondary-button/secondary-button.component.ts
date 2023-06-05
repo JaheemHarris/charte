@@ -9,5 +9,6 @@ import { SecondaryButtonType } from './secondary-button.type';
 export class SecondaryButtonComponent {
 
   @Input() type: SecondaryButtonType = 'primary';
+  @Input() icon: string = '';
 
 }

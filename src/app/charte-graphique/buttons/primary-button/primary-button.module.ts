@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PrimaryButtonComponent } from './primary-button.component';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 
 
@@ -9,7 +10,8 @@ import { MatButtonModule } from '@angular/material/button';
   declarations: [ PrimaryButtonComponent],
   imports: [
     CommonModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ],
   exports: [ PrimaryButtonComponent ]
 })

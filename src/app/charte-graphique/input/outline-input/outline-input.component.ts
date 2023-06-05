@@ -8,6 +8,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class OutlineInputComponent implements OnInit {
 
   @Input() placeholder: string = '';
+  @Input() widthInput: string = '';
   @Input() type: string = '';
   @Output() valueChanged: EventEmitter<string> = new EventEmitter<string>();
   inputValue: string = '';

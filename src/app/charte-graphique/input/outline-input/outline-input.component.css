@@ -1,7 +1,6 @@
 .outline-input {
     min-width: 150px;
-    max-width: 500px;
-    width: 500PX;
+    max-width: 1000px;
   }
   
   .example-full-width {
@@ -11,9 +10,4 @@
   .input-container {
     display: flex;
     align-items: center;
-  }
-
-  .auto-focus {
-    border-color: orange;
-    /* Ajoutez d'autres styles personnalisés ici */
   }

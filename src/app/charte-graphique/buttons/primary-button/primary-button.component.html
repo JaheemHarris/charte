@@ -1,24 +1,28 @@
 <button mat-raised-button *ngIf="type === 'primary'" color="primary">
+    <mat-icon *ngIf="icon !== ''" >{{icon}}</mat-icon>
     <ng-template *ngIf="type === 'primary'" [ngTemplateOutlet]="contentTemplate"></ng-template>
 </button>
 
 <button mat-raised-button *ngIf="type === 'accent'" color="accent">
+    <mat-icon *ngIf="icon !== ''" >{{icon}}</mat-icon>
     <ng-template *ngIf="type === 'accent'" [ngTemplateOutlet]="contentTemplate"></ng-template>
 </button>
 
 <button mat-raised-button *ngIf="type === 'warn'" color="warn">
+    <mat-icon *ngIf="icon !== ''" >{{icon}}</mat-icon>
     <ng-template *ngIf="type === 'warn'" [ngTemplateOutlet]="contentTemplate"></ng-template>
 </button>
 
 <button mat-raised-button *ngIf="type === 'disabled'" disabled>
+    <mat-icon *ngIf="icon !== ''" >{{icon}}</mat-icon>
     <ng-template *ngIf="type === 'disabled'" [ngTemplateOutlet]="contentTemplate"></ng-template>
 </button>
 
 <button mat-button *ngIf="type === 'perso'" class="cca-primary-button">
+    <mat-icon *ngIf="icon !== ''" >{{icon}}</mat-icon>
     <ng-template *ngIf="type === 'perso'" [ngTemplateOutlet]="contentTemplate"></ng-template>
 </button>
 
 <ng-template #contentTemplate>
     <ng-content></ng-content>
 </ng-template>
-
