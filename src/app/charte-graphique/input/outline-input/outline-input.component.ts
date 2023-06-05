@@ -11,6 +11,7 @@ export class OutlineInputComponent implements OnInit {
   @Input() type: string = '';
   @Output() valueChanged: EventEmitter<string> = new EventEmitter<string>();
   inputValue: string = '';
+  isAutoFocus: boolean = true;
 
   onInputChange(event: Event) {
     const value = (event.target as HTMLInputElement).value;

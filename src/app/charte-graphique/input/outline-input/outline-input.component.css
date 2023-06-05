@@ -12,3 +12,8 @@
     display: flex;
     align-items: center;
   }
+
+  .auto-focus {
+    border-color: orange;
+    /* Ajoutez d'autres styles personnalisés ici */
+  }
