@@ -15,6 +15,8 @@ export class DocumentationComponent implements OnInit {
   ];
   inputValue: string = '';
   inputValueText: string = '';
+  inputOutValueText: string ='';
+  inputOutValueSimple: string ='';
 
   constructor() { }
   
@@ -34,6 +36,18 @@ export class DocumentationComponent implements OnInit {
   onInputValueChangedtext(value: string) {
     this.inputValueText = value;
     console.log('Input value Text:', this.inputValueText);
+    // Faites autre chose avec la valeur de l'input
+  }
+
+  onInputValueChangedSimple(value: string) {
+    this.inputOutValueSimple = value;
+    console.log('Outline value Text:', this.inputOutValueSimple);
+    // Faites autre chose avec la valeur de l'input
+  }
+
+  onInputValueChangedOutText(value: string) {
+    this.inputOutValueText = value;
+    console.log('Outline value Text:', this.inputOutValueText);
     // Faites autre chose avec la valeur de l'input
   }
 

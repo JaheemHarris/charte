@@ -113,7 +113,7 @@
   <div class="example-label"> outline simple</div>
   <div class="example-button-row">
     <div class="example-flex-container">
-      <cca-outline-input [placeholder]="'placeholder'" [type]="'simple'" (valueChanged)="onInputValueChangedtext($event)"></cca-outline-input>
+      <cca-outline-input [placeholder]="'placeholder'" [type]="'simple'" (valueChanged)="onInputValueChangedSimple($event)"></cca-outline-input>
     </div>
   </div>
 </section>
@@ -124,7 +124,7 @@
   <div class="example-label"> outline text</div>
   <div class="example-button-row">
     <div class="example-flex-container">
-      <cca-outline-input [placeholder]="'placeholder'" [type]="'text'"></cca-outline-input>
+      <cca-outline-input [placeholder]="'placeholder'" [type]="'text'" (valueChanged)="onInputValueChangedOutText($event)"></cca-outline-input>
     </div>
   </div>
 </section>
@@ -167,6 +167,8 @@
     </div>
   </div>
 </section>
+
+
 
 <!-- <p class="text-sm ...">The quick brown fox ...</p>
 <p class="text-base ...">The quick brown fox ...</p>

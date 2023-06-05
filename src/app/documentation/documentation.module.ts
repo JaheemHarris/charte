@@ -16,6 +16,7 @@ import { OutlineInputModule } from '../charte-graphique/input/outline-input/outl
 import { FormsModule } from '@angular/forms';
 import { SelectSimpleModule } from '../charte-graphique/select/select-simple/select-simple.module';
 import { SelectMultipleModule } from '../charte-graphique/select/select-multiple/select-multiple.module';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 @NgModule({
   imports: [
