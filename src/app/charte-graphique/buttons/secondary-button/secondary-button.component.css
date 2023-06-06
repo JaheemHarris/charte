@@ -9,3 +9,7 @@
   .text {
     @apply text-blue-400;
   }
+
+  .cca-second-button {
+    @apply border border-green-500 !important
+  }

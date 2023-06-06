@@ -3,7 +3,7 @@
 </button>
 
 <button mat-button *ngIf="type === 'accent'" color="accent">
-  <ng-template *ngIf="type === 'accent'" [ngTemplateOutlet]="contentTemplate"></ng-template>
+  <mat-label class="label">{{label}}</mat-label>
 </button>
 
 <button mat-button *ngIf="type === 'warn'" color="warn">

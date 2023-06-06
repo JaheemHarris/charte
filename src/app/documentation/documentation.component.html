@@ -20,7 +20,7 @@
   <div class="example-label">Second</div>
   <div class="example-button-row">
     <flat-button-secondary [type]="'primary'" [icon]="'bookmark'">Primary</flat-button-secondary>
-    <flat-button-secondary [type]="'perso'" [icon]="'cancel'" [label]="'Perso'"></flat-button-secondary>
+    <flat-button-secondary [type]="'perso'" [icon]="'cancel'" [label]="'Accent'"></flat-button-secondary>
     <flat-button-secondary [type]="'warn'" [icon]="'warning'">Warning</flat-button-secondary>
     <flat-button-secondary [type]="'disabled'">Disabled</flat-button-secondary>
     <flat-button-secondary [type]="'cancel'">Cancel</flat-button-secondary>
@@ -33,7 +33,7 @@
   <div class="example-label">Basic</div>
   <div class="example-button-row">
     <flat-button-text [type]="'primary'">Primary</flat-button-text>
-    <flat-button-text [type]="'accent'">Accent</flat-button-text>
+    <flat-button-text [type]="'accent'" [label]="'Accent'"></flat-button-text>
     <flat-button-text [type]="'warn'">Warning</flat-button-text>
     <flat-button-text [type]="'disabled'">Disabled</flat-button-text>
     <flat-button-text [type]="'perso'">Perso</flat-button-text>
@@ -154,6 +154,17 @@
   <div class="example-button-row">
     <div class="example-flex-container">
       <cca-select-simple [label]="'select simple'" [list]="list" (valueChange)="onValueChange($event)"></cca-select-simple>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label">toogle multiples</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <app-button-toggle-group [options]="toggleOptions" [type]="'multiple'"></app-button-toggle-group>
     </div>
   </div>
 </section>

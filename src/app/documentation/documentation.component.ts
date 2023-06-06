@@ -17,6 +17,13 @@ export class DocumentationComponent implements OnInit {
   inputValueText: string = '';
   inputOutValueText: string ='';
   inputOutValueSimple: string ='';
+
+  toggleOptions: any[] = [
+    { value: 'bold', label: 'Bold' },
+    { value: 'italic', label: 'Italic' },
+    { value: 'underline', label: 'Underline' }
+  ];
+  
   
   myFilter = (d: Date | null): boolean => {
     const day = (d || new Date()).getDay();

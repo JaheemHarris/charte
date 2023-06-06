@@ -1,3 +1,4 @@
-.cca-checkbox .mat-checkbox-background{
+.cca-checkbox input[type="checkbox"] {
     @apply bg-green-500;
-}
+  }
+  

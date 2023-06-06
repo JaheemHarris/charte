@@ -19,6 +19,7 @@ import { SelectMultipleModule } from '../charte-graphique/select/select-multiple
 import { DatePickerModule } from '../charte-graphique/input/Date-picker/Date-picker.module';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatInputModule } from '@angular/material/input';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 @NgModule({
   imports: [
@@ -40,7 +41,8 @@ import { MatInputModule } from '@angular/material/input';
     SelectMultipleModule,
     DatePickerModule,
     MatDatepickerModule,
-    MatInputModule
+    MatInputModule,
+    MatButtonToggleModule
   ],
   declarations: [DocumentationComponent]
 })
