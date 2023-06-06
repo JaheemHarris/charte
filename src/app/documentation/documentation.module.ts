@@ -17,6 +17,8 @@ import { FormsModule } from '@angular/forms';
 import { SelectSimpleModule } from '../charte-graphique/select/select-simple/select-simple.module';
 import { SelectMultipleModule } from '../charte-graphique/select/select-multiple/select-multiple.module';
 import { DatePickerModule } from '../charte-graphique/input/Date-picker/Date-picker.module';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   imports: [
@@ -36,7 +38,9 @@ import { DatePickerModule } from '../charte-graphique/input/Date-picker/Date-pic
     FormsModule,
     SelectSimpleModule,
     SelectMultipleModule,
-    DatePickerModule
+    DatePickerModule,
+    MatDatepickerModule,
+    MatInputModule
   ],
   declarations: [DocumentationComponent]
 })

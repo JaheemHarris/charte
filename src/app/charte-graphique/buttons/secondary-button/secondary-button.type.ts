@@ -4,4 +4,5 @@ export type SecondaryButtonType =
     | 'warn'
     | 'basic'
     | 'disabled'
-    | 'perso';
+    | 'perso'
+    | 'cancel';

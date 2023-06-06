@@ -18,9 +18,13 @@
     <ng-template *ngIf="type === 'disabled'" [ngTemplateOutlet]="contentTemplate"></ng-template>
 </button>
 
-<button mat-stroked-button *ngIf="type === 'perso'" class="cca-second-button">
-    <mat-icon *ngIf="icon !== ''" >{{icon}}</mat-icon>
-    <ng-template *ngIf="type === 'perso'" [ngTemplateOutlet]="contentTemplate"></ng-template>
+<button mat-stroked-button *ngIf="type === 'perso'" class="button-perso">
+    <mat-icon class="icon" *ngIf="icon !== ''" >{{icon}}</mat-icon>
+    <mat-label class="text">{{label}}</mat-label>
+</button>
+
+<button mat-stroked-button *ngIf="type === 'cancel'" class="cca-second-button">
+    <ng-template *ngIf="type === 'cancel'" [ngTemplateOutlet]="contentTemplate"></ng-template>
 </button>
 
 <ng-template #contentTemplate>

@@ -17,19 +17,20 @@ export class DocumentationComponent implements OnInit {
   inputValueText: string = '';
   inputOutValueText: string ='';
   inputOutValueSimple: string ='';
-
-  selectedDate!: Date | null;
-
+  
+  myFilter = (d: Date | null): boolean => {
+    const day = (d || new Date()).getDay();
+    // Prevent Saturday and Sunday from being selected.
+    return day !== 0 && day !== 6;
+  };
   constructor() { }
   
   ngOnInit() {}
-
-  onDateSelected(date: Date | null) {
-    if (date) {
-      this.selectedDate = date;
-    }
-  }
   
+  onDateSelected(date: Date): void {
+    console.log('Date selected:', date);    
+  }
+
   onValueChange(value: any) {
     console.log('Selected value:', value);
     // Faites ce que vous voulez avec la valeur sélectionnée ici
@@ -37,7 +38,7 @@ export class DocumentationComponent implements OnInit {
   
   onInputValueChanged(value: string) {
     this.inputValue = value;
-    console.log('Input value:', this.inputValue);
+    console.log('Input value:', this.inputValue);    
     // Faites autre chose avec la valeur de l'input
   }
 

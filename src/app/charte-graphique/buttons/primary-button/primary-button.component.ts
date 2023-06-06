@@ -10,5 +10,6 @@ export class PrimaryButtonComponent {
 
   @Input() type: PrimaryButtonType = 'primary';
   @Input() icon: string = '';
+  @Input() label: string = '';
 
 }

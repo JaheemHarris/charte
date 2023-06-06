@@ -1,4 +1,11 @@
-.cca-second-button{
-    /* @apply bg-green-500 text-white border-green-500 border-2 rounded-md px-4 py-2; */
-    @apply bg-white text-white border-green-500 border-2 rounded-md px-4 py-2;
-}
+  .button-perso:hover {
+    @apply bg-blue-50;
+  }
+  
+  .icon {
+    @apply text-blue-400;
+  }
+
+  .text {
+    @apply text-blue-400;
+  }

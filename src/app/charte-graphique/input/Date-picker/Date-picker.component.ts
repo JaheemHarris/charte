@@ -1,19 +1,19 @@
-import { Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
-import { MatDatepickerInputEvent } from '@angular/material/datepicker';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
-  selector: 'cca-Date-picker',
+  selector: 'cca-date-picker',
   templateUrl: './Date-picker.component.html',
   styleUrls: ['./Date-picker.component.css']
 })
 export class DatePickerComponent implements OnInit {
 
   @Output() dateSelected: EventEmitter<Date> = new EventEmitter<Date>();
+  
+  selectedDate: Date | null = null;
 
-  onDateChange(event: MatDatepickerInputEvent<Date | null>) {
-    if (event.value) {
-      this.dateSelected.emit(event.value);
-    }
+  onDateSelected(date: Date): void {
+    this.selectedDate = date;
+    this.dateSelected.emit(date);
   }
 
   constructor(){}

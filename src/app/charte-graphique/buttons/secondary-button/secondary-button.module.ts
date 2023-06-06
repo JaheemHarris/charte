@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SecondaryButtonComponent } from './secondary-button.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
 
 
 
@@ -13,7 +14,8 @@ import { MatIconModule } from '@angular/material/icon';
   imports: [
     CommonModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatInputModule
   ],
   exports: [SecondaryButtonComponent]
 })

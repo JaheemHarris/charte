@@ -3,9 +3,9 @@
     <ng-template *ngIf="type === 'primary'" [ngTemplateOutlet]="contentTemplate"></ng-template>
 </button>
 
-<button mat-raised-button *ngIf="type === 'accent'" color="accent">
-    <mat-icon *ngIf="icon !== ''" >{{icon}}</mat-icon>
-    <ng-template *ngIf="type === 'accent'" [ngTemplateOutlet]="contentTemplate"></ng-template>
+<button mat-button *ngIf="type === 'accent'" class="button-accent">
+    <mat-icon class="icon" *ngIf="icon !== ''" >{{icon}}</mat-icon>
+    <mat-label class="label">{{label}}</mat-label>
 </button>
 
 <button mat-raised-button *ngIf="type === 'warn'" color="warn">
@@ -18,7 +18,7 @@
     <ng-template *ngIf="type === 'disabled'" [ngTemplateOutlet]="contentTemplate"></ng-template>
 </button>
 
-<button mat-button *ngIf="type === 'perso'" class="cca-primary-button">
+<button mat-button *ngIf="type === 'perso'" class="button-perso">
     <mat-icon *ngIf="icon !== ''" >{{icon}}</mat-icon>
     <ng-template *ngIf="type === 'perso'" [ngTemplateOutlet]="contentTemplate"></ng-template>
 </button>

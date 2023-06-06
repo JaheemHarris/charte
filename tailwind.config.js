@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       colors: {
         primary: '#0075EA',
+        accent: '#93c5fd',
+        perso: '#4ade80',
         secondary: '#023D74',
         error: '#F83546',
         success: '#20ad61',
@@ -29,7 +31,18 @@ module.exports = {
         '900': '900',
       },
       fontSize: {
-        '3xl': '3.5rem',
+        'sm': '0.875rem',
+        'base': '1rem',
+        'lg' : '1.125rem',
+        'xl' : '1.25rem',
+        '2xl' : '1.5rem',
+        '3xl' : '1.875rem',
+        '4xl' : '2.25rem',
+        '5xl' : '3rem',
+        '6xl' : '3.75rem',
+        '7xl' : '4.5rem',
+        '8xl' : '6rem',
+        '9xl' : '8rem',
         '14': '14px',
         '16': '16px',
         '18': '18px',
