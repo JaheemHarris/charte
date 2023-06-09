@@ -14,4 +14,5 @@ export class ButtonToggleGroupComponent {
       option.active = option === clickedOption;
     });
   }
+  
 }

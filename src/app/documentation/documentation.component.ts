@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-documentation',
@@ -6,65 +7,63 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./documentation.component.css']
 })
 export class DocumentationComponent implements OnInit {
-  
-  list: any[] = [
-    {value: '0', viewValue: 'Steak'},
-    {value: '1', viewValue: 'Pizza'},
-    {value: '2', viewValue: 'Tacos'},
-    {value: '3', viewValue: 'Panini'}
-  ];
-  inputValue: string = '';
-  inputValueText: string = '';
-  inputOutValueText: string ='';
-  inputOutValueSimple: string ='';
 
-  toggleOptions: any[] = [
-    { value: 'bold', label: 'Bold' },
-    { value: 'italic', label: 'Italic' },
-    { value: 'underline', label: 'Underline' }
+  list: any[] = [
+    { icon: 'dialpad', label: 'Redial' },
+    { icon: 'voicemail', label: 'Check voice mail', disabled: true },
+    { icon: 'notifications_off', label: 'Disable alerts' }
   ];
-  
-  
-  myFilter = (d: Date | null): boolean => {
-    const day = (d || new Date()).getDay();
-    // Prevent Saturday and Sunday from being selected.
-    return day !== 0 && day !== 6;
-  };
-  constructor() { }
+
+  constructor(private router: Router) { }
   
   ngOnInit() {}
+
+  navigateButton() {
+    this.router.navigate(['/general/bouton']);
+  }
+
+  navigatecheck() {
+    this.router.navigate(['/general/checkbox']);
+  }
+
+  navigateFont() {
+    this.router.navigate(['/general/font']);
+  }
+
+  navigateIcon() {
+    this.router.navigate(['/general/icon']);
+  }
+
+  navigateInput() {
+    this.router.navigate(['/general/input']);
+  }
+
+  navigateMenu() {
+    this.router.navigate(['/general/menu']);
+  }
+
+  navigateSelect() {
+    this.router.navigate(['/general/select']);
+  }
+
+  navigateToggle() {
+    this.router.navigate(['/general/toggle']);
+  }
   
-  onDateSelected(date: Date): void {
-    console.log('Date selected:', date);    
-  }
-
-  onValueChange(value: any) {
-    console.log('Selected value:', value);
-    // Faites ce que vous voulez avec la valeur sélectionnée ici
+  handleButtonClick() {
+    console.log('Le bouton a été cliqué depuis le composant parent');
   }
   
-  onInputValueChanged(value: string) {
-    this.inputValue = value;
-    console.log('Input value:', this.inputValue);    
-    // Faites autre chose avec la valeur de l'input
+  handleRedialClick() {
+    console.log('Redial a été sélectionné depuis le composant parent');
   }
-
-  onInputValueChangedtext(value: string) {
-    this.inputValueText = value;
-    console.log('Input value Text:', this.inputValueText);
-    // Faites autre chose avec la valeur de l'input
+  
+  handleVoicemailClick() {
+    console.log('Check voice mail a été sélectionné depuis le composant parent');
   }
-
-  onInputValueChangedSimple(value: string) {
-    this.inputOutValueSimple = value;
-    console.log('Outline value Text:', this.inputOutValueSimple);
-    // Faites autre chose avec la valeur de l'input
+  
+  handleDisableAlertsClick() {
+    console.log('Disable alerts a été sélectionné depuis le composant parent');
   }
-
-  onInputValueChangedOutText(value: string) {
-    this.inputOutValueText = value;
-    console.log('Outline value Text:', this.inputOutValueText);
-    // Faites autre chose avec la valeur de l'input
-  }
-
+  
 }

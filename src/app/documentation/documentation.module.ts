@@ -1,3 +1,4 @@
+import { InputComponent } from './Input/Input.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DocumentationComponent } from './documentation.component';
@@ -20,6 +21,15 @@ import { DatePickerModule } from '../charte-graphique/input/Date-picker/Date-pic
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { BoutonComponent } from './Bouton/Bouton.component';
+import { IconComponent } from './Icon/Icon.component';
+import { FontComponent } from './Font/Font.component';
+import { SelectComponent } from './select/select.component';
+import { ToggleComponent } from './toggle/toggle.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
+import { MenuModule } from '../charte-graphique/Menu/Menu.module';
+import { MenuComponent } from './menu/menu.component';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   imports: [
@@ -42,8 +52,20 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     DatePickerModule,
     MatDatepickerModule,
     MatInputModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MenuModule,
+    MatMenuModule
   ],
-  declarations: [DocumentationComponent]
+  declarations: [
+    DocumentationComponent,
+    BoutonComponent, 
+    IconComponent, 
+    InputComponent,
+    FontComponent,
+    SelectComponent,
+    ToggleComponent,
+    CheckboxComponent,
+    MenuComponent
+  ]
 })
 export class DocumentationModule { }

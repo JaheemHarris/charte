@@ -1,0 +1,75 @@
+ 
+    .text_sm{
+      @apply text-sm text-neutral4;
+    }
+  
+    .text_base{
+      @apply text-base text-neutral3;
+    }
+  
+    .text_lg{
+      @apply text-lg text-text;
+    }
+  
+    .text_xl{
+      @apply text-xl text-success;
+    }
+  
+    .text_2xl{
+      @apply text-2xl text-accent;
+    }
+  
+    .text_3xl{
+      @apply text-3xl text-error;
+    }
+  
+    .text_4xl{
+      @apply text-4xl text-primary;
+    }
+  
+    .text_5xl{
+      @apply text-5xl;
+    }
+  
+    .text_6xl{
+      @apply text-6xl;
+    }
+  
+    .text_7xl{
+      @apply text-7xl;
+    }
+  
+    .text_8xl{
+      @apply text-8xl;
+    }
+  
+    .text_9xl{
+      @apply text-9xl;
+    }
+  
+  
+    section {
+        display: table;
+      }
+      
+      .example-label {
+        display: table-cell;
+        font-size: 14px;
+        margin-left: 8px;
+        min-width: 120px;
+      }
+      
+      .example-button-row {
+        display: table-cell;
+      }
+      
+      .example-button-row .mat-mdc-button-base {
+        margin: 8px 8px 8px 0;
+      }
+      
+      flat-button-primary, flat-button-secondary, cca-basic-icon, cca-icon-fab, cca-icon-mini-fab, cca-checkbox,
+      flat-button-text {
+        margin: 8px 8px 8px 0;
+      }
+      
+      

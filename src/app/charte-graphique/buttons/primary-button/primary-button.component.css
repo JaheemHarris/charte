@@ -9,4 +9,19 @@
 .icon, .label {
     @apply text-white;
 }
-	
+
+button.small {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  
+  button.medium {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  
+  button.large {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  

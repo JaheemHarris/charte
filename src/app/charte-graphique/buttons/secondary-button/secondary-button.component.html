@@ -1,14 +1,14 @@
-<button mat-stroked-button *ngIf="type === 'primary'" color="primary">
+<button mat-stroked-button *ngIf="type === 'primary'" class="prim_button" color="primary">
     <mat-icon *ngIf="icon !== ''" >{{icon}}</mat-icon>
     <ng-template *ngIf="type === 'primary'" [ngTemplateOutlet]="contentTemplate"></ng-template>
 </button>
 
-<button mat-stroked-button *ngIf="type === 'accent'" color="accent">
+<!-- <button mat-stroked-button *ngIf="type === 'accent'" class="acce_button" color="accent">
     <mat-icon *ngIf="icon !== ''" >{{icon}}</mat-icon>
     <ng-template *ngIf="type === 'accent'" [ngTemplateOutlet]="contentTemplate"></ng-template>
-</button>
+</button> -->
 
-<button mat-stroked-button *ngIf="type === 'warn'" color="warn">
+<button mat-stroked-button *ngIf="type === 'warn'" class="warn_butt" color="warn">
     <mat-icon *ngIf="icon !== ''" >{{icon}}</mat-icon>
     <ng-template *ngIf="type === 'warn'" [ngTemplateOutlet]="contentTemplate"></ng-template>
 </button>
@@ -18,12 +18,12 @@
     <ng-template *ngIf="type === 'disabled'" [ngTemplateOutlet]="contentTemplate"></ng-template>
 </button>
 
-<button mat-stroked-button *ngIf="type === 'perso'" class="button-perso">
+<button mat-stroked-button *ngIf="type === 'accent'" class="button-perso">
     <mat-icon class="icon" *ngIf="icon !== ''" >{{icon}}</mat-icon>
     <mat-label class="text">{{label}}</mat-label>
 </button>
 
-<button mat-stroked-button *ngIf="type === 'cancel'" class="cca-second-button">
+<button mat-stroked-button *ngIf="type === 'cancel'">
     <ng-template *ngIf="type === 'cancel'" [ngTemplateOutlet]="contentTemplate"></ng-template>
 </button>
 

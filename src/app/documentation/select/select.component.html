@@ -1,0 +1,25 @@
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label"> select simple</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <cca-select-simple [label]="'select simple'" [list]="list"
+        (valueChange)="onValueChange($event)"></cca-select-simple>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label"> select multiple basic</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <app-select-multiple [toppingList]="toppingList" [type]="'basic'" [label]="'select multiple'"
+        (selectedValuesChanged)="logSelectedValues($event)"></app-select-multiple>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>

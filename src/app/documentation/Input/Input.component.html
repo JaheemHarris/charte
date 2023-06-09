@@ -1,0 +1,86 @@
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label"> basic simple</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <cca-basic-input [label]="'favorite food'" [widthInput] ="'500'" [placeholder]="'this is pizza'" [type]="'basic'" (valueChanged)="onInputValueChanged($event)"></cca-basic-input>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label"> basic text</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <cca-basic-input [label]="'second label'" [widthInput] ="'1000'" [placeholder]="'second placeholder'" [type]="'text'" (valueChanged)="onInputValueChangedtext($event)"></cca-basic-input>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label"> outline simple</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <cca-outline-input [placeholder]="'placeholder'" [widthInput] ="'700'" [type]="'simple'" (valueChanged)="onInputValueChangedSimple($event)"></cca-outline-input>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label"> outline text</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <cca-outline-input [placeholder]="'placeholder'" [type]="'text'" [widthInput] ="'800'" (valueChanged)="onInputValueChangedOutText($event)"></cca-outline-input>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label"> Date Picker Simple</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <!-- <cca-date-picker (dateSelected)="onDateSelected($event)"></cca-date-picker> -->
+      <mat-form-field class="example-full-width">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepickerFilter]="myFilter" [matDatepicker]="picker">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label"> Date Picker action button</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <mat-form-field class="example-form-field">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="datepicker">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="datepicker"></mat-datepicker-toggle>
+        <mat-datepicker #datepicker>
+          <mat-datepicker-actions>
+            <button mat-button matDatepickerCancel>Cancel</button>
+            <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
+          </mat-datepicker-actions>
+        </mat-datepicker>
+      </mat-form-field>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>
+

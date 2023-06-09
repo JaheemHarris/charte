@@ -10,6 +10,14 @@
     @apply text-blue-400;
   }
 
-  .cca-second-button {
-    @apply border border-green-500 !important
+  .prim_button {
+    @apply border border-primary !important;
+  }
+
+  .button-perso {
+    @apply border border-accent !important;
+  }
+
+  .warn_butt {
+    @apply border border-red-600 !important;
   }
