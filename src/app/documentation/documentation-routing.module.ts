@@ -9,6 +9,8 @@ import { SelectComponent } from './select/select.component';
 import { ToggleComponent } from './toggle/toggle.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { MenuComponent } from './menu/menu.component';
+import { TagComponent } from './Tag/Tag.component';
+import { TooltipComponent } from './tooltip/tooltip.component';
 
 const routes: Routes = [
   {
@@ -51,6 +53,14 @@ const routes: Routes = [
       {
         path: 'menu', // child route path
         component: MenuComponent, // child route component that the router renders
+      },
+      {
+        path: 'tag', // child route path
+        component: TagComponent, // child route component that the router renders
+      },
+      {
+        path: 'tooltip', // child route path
+        component: TooltipComponent, // child route component that the router renders
       },
       { path: '**', redirectTo: 'documentation' },
     ],

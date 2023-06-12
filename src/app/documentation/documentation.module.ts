@@ -14,7 +14,7 @@ import { CheckboxModule } from '../charte-graphique/input/checkbox/checkbox.modu
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { CheckRoundModule } from '../charte-graphique/input/check-round/check-round.module';
 import { OutlineInputModule } from '../charte-graphique/input/outline-input/outline-input.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SelectSimpleModule } from '../charte-graphique/select/select-simple/select-simple.module';
 import { SelectMultipleModule } from '../charte-graphique/select/select-multiple/select-multiple.module';
 import { DatePickerModule } from '../charte-graphique/input/Date-picker/Date-picker.module';
@@ -30,6 +30,13 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { MenuModule } from '../charte-graphique/Menu/Menu.module';
 import { MenuComponent } from './menu/menu.component';
 import {MatMenuModule} from '@angular/material/menu';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatSelectModule } from '@angular/material/select';
+import { FontModule } from '../charte-graphique/font/font.module';
+import { TagModule } from '../charte-graphique/tag/tag.module';
+import { TagComponent } from './Tag/Tag.component';
+import { TooltipModule } from '../charte-graphique/tooltip/tooltip.module';
+import { TooltipComponent } from './tooltip/tooltip.component';
 
 @NgModule({
   imports: [
@@ -54,7 +61,13 @@ import {MatMenuModule} from '@angular/material/menu';
     MatInputModule,
     MatButtonToggleModule,
     MenuModule,
-    MatMenuModule
+    MatMenuModule,
+    MatChipsModule,
+    MatSelectModule,
+    ReactiveFormsModule,
+    FontModule,
+    TagModule,
+    TooltipModule
   ],
   declarations: [
     DocumentationComponent,
@@ -65,7 +78,9 @@ import {MatMenuModule} from '@angular/material/menu';
     SelectComponent,
     ToggleComponent,
     CheckboxComponent,
-    MenuComponent
+    MenuComponent,
+    TagComponent,
+    TooltipComponent
   ]
 })
 export class DocumentationModule { }

@@ -18,7 +18,14 @@ export class SelectComponent implements OnInit {
 
   inputValue: string = '';
 
+  yourOptions: string[] = ['Option A', 'Option B', 'Option C','Option D', 'Option E', 'Option F'];
+
   constructor() { }
+
+  onSelectedValuesThematicsChange(selectedValues: string[]) {
+    // Faites quelque chose avec les valeurs sélectionnées thematics
+    console.log(selectedValues);
+  }
 
   logSelectedValues(selectedValues: string[]): void {
     console.log('Selected values in parent:', selectedValues);

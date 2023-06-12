@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,11 +8,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./documentation.component.css']
 })
 export class DocumentationComponent implements OnInit {
-
-  list: any[] = [
-    { icon: 'dialpad', label: 'Redial' },
-    { icon: 'voicemail', label: 'Check voice mail', disabled: true },
-    { icon: 'notifications_off', label: 'Disable alerts' }
+  toppings = new FormControl('');
+  toppingList: string[] = [
+    'Extra cheese',
+    'Mushroom',
+    'Onion',
+    'Pepperoni',
+    'Sausage',
+    'Tomato',
   ];
 
   constructor(private router: Router) { }
@@ -20,6 +24,14 @@ export class DocumentationComponent implements OnInit {
 
   navigateButton() {
     this.router.navigate(['/general/bouton']);
+  }
+
+  navigateTag() {
+    this.router.navigate(['/general/tag']);
+  }
+
+  navigateTooltip() {
+    this.router.navigate(['/general/tooltip']);
   }
 
   navigatecheck() {

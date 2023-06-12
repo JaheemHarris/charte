@@ -14,6 +14,28 @@ export class SelectMultipleComponent implements OnInit {
   @Input() toppingList: string[] = [];
   @Output() selectedValuesChanged = new EventEmitter<string[]>();
 
+  //Select thematics
+  @Input() options: string[] = [];
+  @Output() selectedValuesThematicsChange = new EventEmitter<string[]>();
+  selectedOptions = new FormControl();
+
+  removeOptionThematics(option: string) {
+    const index = this.selectedOptions.value.indexOf(option);
+    if (index >= 0) {
+      this.selectedOptions.value.splice(index, 1);
+      this.selectedOptions.setValue(this.selectedOptions.value);
+    }
+    this.emitSelectedValuesThematics();
+  }
+
+  onSelectionThematicsChange() {
+    this.emitSelectedValuesThematics();
+  }
+
+  private emitSelectedValuesThematics() {
+    this.selectedValuesThematicsChange.emit(this.selectedOptions.value);
+  }
+  //Find select thematics
   
   onSelectionChange(): void {
     const value = this.toppings.value;

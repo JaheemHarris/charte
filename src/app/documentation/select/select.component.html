@@ -23,3 +23,14 @@
 </section>
 <br>
 <mat-divider></mat-divider>
+<br>
+<section style="width: 800px;">
+  <div class="example-label"> select multiple thematics</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <app-select-multiple [type]="'thematics'" [options]="yourOptions" (selectedValuesThematicsChange)="onSelectedValuesThematicsChange($event)"></app-select-multiple>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>
