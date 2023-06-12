@@ -37,6 +37,10 @@ import { TagModule } from '../charte-graphique/tag/tag.module';
 import { TagComponent } from './Tag/Tag.component';
 import { TooltipModule } from '../charte-graphique/tooltip/tooltip.module';
 import { TooltipComponent } from './tooltip/tooltip.component';
+import { ToolbarModule } from '../charte-graphique/toolbar/toolbar.module';
+import { ToolbarComponent } from './Toolbar/Toolbar.component';
+import { SidebarModule } from '../charte-graphique/sidebar/sidebar.module';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   imports: [
@@ -67,7 +71,9 @@ import { TooltipComponent } from './tooltip/tooltip.component';
     ReactiveFormsModule,
     FontModule,
     TagModule,
-    TooltipModule
+    TooltipModule,
+    ToolbarModule,
+    SidebarModule
   ],
   declarations: [
     DocumentationComponent,
@@ -80,7 +86,9 @@ import { TooltipComponent } from './tooltip/tooltip.component';
     CheckboxComponent,
     MenuComponent,
     TagComponent,
-    TooltipComponent
+    TooltipComponent,
+    ToolbarComponent,
+    SidebarComponent
   ]
 })
 export class DocumentationModule { }

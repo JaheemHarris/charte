@@ -26,6 +26,14 @@ export class DocumentationComponent implements OnInit {
     this.router.navigate(['/general/bouton']);
   }
 
+  navigateSidebar() {
+    this.router.navigate(['/general/sidebar']);
+  }
+
+  navigateToolbar() {
+    this.router.navigate(['/general/toolbar']);
+  }
+
   navigateTag() {
     this.router.navigate(['/general/tag']);
   }

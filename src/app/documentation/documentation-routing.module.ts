@@ -11,6 +11,8 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { MenuComponent } from './menu/menu.component';
 import { TagComponent } from './Tag/Tag.component';
 import { TooltipComponent } from './tooltip/tooltip.component';
+import { ToolbarComponent } from './Toolbar/Toolbar.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 const routes: Routes = [
   {
@@ -61,6 +63,14 @@ const routes: Routes = [
       {
         path: 'tooltip', // child route path
         component: TooltipComponent, // child route component that the router renders
+      },
+      {
+        path: 'toolbar', // child route path
+        component: ToolbarComponent, // child route component that the router renders
+      },
+      {
+        path: 'sidebar', // child route path
+        component: SidebarComponent, // child route component that the router renders
       },
       { path: '**', redirectTo: 'documentation' },
     ],
