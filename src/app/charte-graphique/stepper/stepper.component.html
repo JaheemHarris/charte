@@ -1,0 +1,40 @@
+<ng-container [ngSwitch]="stepperOrientation">
+  <div *ngSwitchCase="'horizontal'">Make your screen smaller to see a vertical stepper</div>
+  <div *ngSwitchCase="'vertical'">Make your screen larger to see a horizontal stepper</div>
+</ng-container>
+
+<mat-stepper [orientation]="stepperOrientation" #stepper>
+  <mat-step [stepControl]="firstFormGroup" [errorMessage]="step1ErrorMessage">
+    <ng-template matStepLabel>{{ step1Label }}</ng-template>
+    <form [formGroup]="firstFormGroup">
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput [placeholder]="step1Placeholder" formControlName="firstCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperNext>{{ step1NextButtonText }}</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup" [errorMessage]="step2ErrorMessage">
+    <ng-template matStepLabel>{{ step2Label }}</ng-template>
+    <form [formGroup]="secondFormGroup">
+      <mat-form-field>
+        <mat-label>Address</mat-label>
+        <input matInput [placeholder]="step2Placeholder" formControlName="secondCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>{{ step2BackButtonText }}</button>
+        <button mat-button matStepperNext>{{ step2NextButtonText }}</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>{{ finalStepLabel }}</ng-template>
+    <p>{{ finalStepMessage }}</p>
+    <div>
+      <button mat-button matStepperPrevious>{{ finalStepBackButtonText }}</button>
+      <button mat-button (click)="stepper.reset()">{{ resetButtonText }}</button>
+    </div>
+  </mat-step>
+</mat-stepper>

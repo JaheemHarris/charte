@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ToolbarComponent implements OnInit {
 
   @Input() color : string = '';
+  @Input() height : string = '';
 
   constructor() { }
 

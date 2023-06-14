@@ -30,6 +30,14 @@ export class DocumentationComponent implements OnInit {
     this.router.navigate(['/general/sidebar']);
   }
 
+  navigateSnackbar() {
+    this.router.navigate(['/general/snackbar']);
+  }
+
+  navigateStepper() {
+    this.router.navigate(['/general/stepper']);
+  }
+
   navigateToolbar() {
     this.router.navigate(['/general/toolbar']);
   }

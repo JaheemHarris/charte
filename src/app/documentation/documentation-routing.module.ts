@@ -13,6 +13,8 @@ import { TagComponent } from './Tag/Tag.component';
 import { TooltipComponent } from './tooltip/tooltip.component';
 import { ToolbarComponent } from './Toolbar/Toolbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { StepperComponent } from './stepper/stepper.component';
+import { SnackbarComponent } from './snackbar/snackbar.component';
 
 const routes: Routes = [
   {
@@ -71,6 +73,14 @@ const routes: Routes = [
       {
         path: 'sidebar', // child route path
         component: SidebarComponent, // child route component that the router renders
+      },
+      {
+        path: 'stepper', // child route path
+        component: StepperComponent, // child route component that the router renders
+      },
+      {
+        path: 'snackbar', // child route path
+        component: SnackbarComponent, // child route component that the router renders
       },
       { path: '**', redirectTo: 'documentation' },
     ],

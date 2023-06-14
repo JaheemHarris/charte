@@ -1,4 +1,13 @@
-<app-tag label="Tag 1" color="primary"></app-tag>
-<app-tag label="Tag 2" color="accent" [removable]="true"></app-tag>
-<app-tag label="Tag 3" color="warn"></app-tag>
-<app-tag label="Tag 2" color="accent" [removable]="true"></app-tag>
+<app-tag label="Tag 1" color="primary" [type]="'basic'"></app-tag>
+<app-tag label="Tag 2" color="accent" [type]="'basic'" [removable]="true"></app-tag>
+<app-tag label="Tag 3" color="warn" [type]="'basic'"></app-tag>
+<app-tag label="Tag 2" color="accent" [type]="'basic'" [removable]="true"></app-tag>
+
+<br> <br>
+
+<app-tag [type]="'chipList'">
+    <mat-chip-option>One fish</mat-chip-option>
+    <mat-chip-option>Two fish</mat-chip-option>
+    <mat-chip-option class="persochip" selected>Accent fish</mat-chip-option>
+    <mat-chip-option color="warn">Warn fish</mat-chip-option>
+</app-tag>

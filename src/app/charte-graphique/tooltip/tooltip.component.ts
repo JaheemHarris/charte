@@ -8,4 +8,6 @@ import { TooltipPosition } from '@angular/material/tooltip';
 })
 export class TooltipComponent {
   
+  @Input() text: string = '';
+
 }

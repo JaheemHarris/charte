@@ -41,6 +41,10 @@ import { ToolbarModule } from '../charte-graphique/toolbar/toolbar.module';
 import { ToolbarComponent } from './Toolbar/Toolbar.component';
 import { SidebarModule } from '../charte-graphique/sidebar/sidebar.module';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { StepperModule } from '../charte-graphique/stepper/stepper.module';
+import { StepperComponent } from './stepper/stepper.component';
+import { SnackbarComponent } from './snackbar/snackbar.component';
 
 @NgModule({
   imports: [
@@ -73,7 +77,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     TagModule,
     TooltipModule,
     ToolbarModule,
-    SidebarModule
+    SidebarModule,
+    MatTooltipModule,
+    StepperModule
   ],
   declarations: [
     DocumentationComponent,
@@ -88,7 +94,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     TagComponent,
     TooltipComponent,
     ToolbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    StepperComponent,
+    SnackbarComponent
   ]
 })
 export class DocumentationModule { }
