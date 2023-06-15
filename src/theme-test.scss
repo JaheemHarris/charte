@@ -1,0 +1,105 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+
+// Import Tailwind CSS custom configuration
+@import './tailwind.config';
+
+// Import Angular Material and other components in your app
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single CSS file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+
+// Replace the default Material Design palettes with the custom colors from Tailwind CSS
+$charte-primary: mat.define-palette(
+  (
+    500: #0075EA,
+    // Add lighter and darker hues if needed
+  )
+);
+
+$charte-accent: mat.define-palette(
+  (
+    500: #023D74,
+    // Add lighter and darker hues if needed
+  )
+);
+
+$charte-warn: mat.define-palette(
+  (
+    500: #F83546,
+    // Add lighter and darker hues if needed
+  )
+);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$charte-theme: mat.define-light-theme((
+  color: (
+    primary: $charte-primary,
+    accent: $charte-accent,
+    warn: $charte-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($charte-theme);
+
+// Add Tailwind CSS custom styles to your theme
+$charte-theme: mat.define-light-theme((
+  // ... your existing theme configurations
+
+  // Add custom typography styles from Tailwind CSS
+  typography: (
+    // Title
+    headline: mat.define-typography-config(
+      $font-family: 'Poppins',
+      $font-style: 'normal',
+      $font-weight: 900,
+      $font-size: 36px,
+      $line-height: 1.2,
+      $letter-spacing: 0
+    ),
+
+    // H1
+    headline1: mat.define-typography-config(
+      $font-family: 'Poppins',
+      $font-style: 'normal',
+      $font-weight: 700,
+      $font-size: 24px,
+      $line-height: 1.2,
+      $letter-spacing: 0
+    ),
+
+    // H2
+    headline2: mat.define-typography-config(
+      $font-family: 'Poppins',
+      $font-style: 'normal',
+      $font-weight: 700,
+      $font-size: 22px,
+      $line-height: 1.2,
+      $letter-spacing: 0
+    ),
+
+    // H3
+    headline3: mat.define-typography-config(
+      $font-family: 'Poppins',
+      $font-style: 'normal',
+      $font-weight: 700,
+      $font-size: 20px,
+      $line-height: 1.2,
+      $letter-spacing: 0
+    )
+    // H4
+  )
+));
+   

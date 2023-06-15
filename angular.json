@@ -89,6 +89,8 @@
             ],
             "styles": [
               "src/styles.css",
+              "src/custom-theme.scss",
+              "src/app/tooltip/tooltip.style.css",
               "./node_modules/tailwindcss/dist/base.min.css",
               "./node_modules/tailwindcss/dist/components.min.css",
               "./node_modules/tailwindcss/dist/utilities.min.css"
