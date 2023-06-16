@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { PrimaryButtonType } from './primary-button.type';
 
 @Component({
   selector: 'cca-primary-button',
@@ -7,7 +6,5 @@ import { PrimaryButtonType } from './primary-button.type';
   styleUrls: ['./primary-button.component.css']
 })
 export class PrimaryButtonComponent {
-
-  @Input() type: PrimaryButtonType = 'primary';
-
+  @Input() type : string = "primary";
 }
