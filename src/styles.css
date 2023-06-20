@@ -4,17 +4,59 @@
 @import 'tailwindcss/utilities';
 
 
-html,
-body {
-    height: 100%;
-}
 
-body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-.tooltip {
+.text_sm{
+    @apply text-sm text-neutral4;
+  }
+
+  .text_base{
+    @apply text-base text-neutral3;
+  }
+
+  .text_lg{
+    @apply text-lg text-text;
+  }
+
+  .text_xl{
+    @apply text-xl text-success;
+  }
+
+  .text_2xl{
+    @apply text-2xl text-accent;
+  }
+
+  .text_3xl{
+    @apply text-3xl text-error;
+  }
+
+  .text_4xl{
+    @apply text-4xl text-primary;
+  }
+
+  .text_5xl{
+    @apply text-5xl;
+  }
+
+  .text_6xl{
+    @apply text-6xl;
+  }
+
+  .text_7xl{
+    @apply text-7xl;
+  }
+
+  .text_8xl{
+    @apply text-8xl;
+  }
+
+  .text_9xl{
+    @apply text-9xl;
+  }
+
+  .tooltip {
     position: absolute;
     margin-top: 1rem;
     margin-left: 1rem;
@@ -30,39 +72,30 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.tooltip::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 8px;
-}
-
 .tooltip-left::after {
-    top: 50%;
-    right: -16px;
-    transform: translateY(-50%);
-    border-color: transparent transparent transparent black;
+  top: 60%;
+  right: -16px;
+  transform: translateY(-50%);
+  border-color: transparent transparent transparent black;
 }
 
 .tooltip-right::after {
-    top: 50%;
-    left: -16px;
-    transform: translateY(-50%);
-    border-color: transparent black transparent transparent;
+  top: 50%;
+  left: -16px;
+  transform: translateY(-50%);
+  border-color: transparent black transparent transparent;
 }
 
 .tooltip-above::after {
-    bottom: -16px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-color: black transparent transparent transparent;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-color: black transparent transparent transparent;
 }
 
 .tooltip-below::after {
-    top: -16px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-color: transparent transparent black transparent;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-color: transparent transparent antiquewhite transparent;
 }

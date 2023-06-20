@@ -1,3 +1,4 @@
+
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use '@angular/material' as mat;
@@ -11,29 +12,19 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$primary-palette: mat.define-palette(mat.$indigo-palette, 500, 300, 700);
-$secondary-palette: mat.define-palette(mat.$blue-palette, 800, 100, 900);
-$error-palette: mat.define-palette(mat.$red-palette, 500);
-$success-palette: mat.define-palette(mat.$green-palette, 500);
-$text-color: #212529;
-$neutral-color-4: #5d6873;
-$neutral-color-3: #8494a4;
-$neutral-color-2: #ced7df;
-$neutral-color-1: #f2f4f8;
+$charte-primary: mat.define-palette(mat.$indigo-palette);
+$charte-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$charte-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
 $charte-theme: mat.define-light-theme((
   color: (
-    primary: $primary-palette,
-    accent: $secondary-palette,
-    warn: $error-palette,
-    success: $success-palette,
-    text: $text-color,
-    'neutral-4': $neutral-color-4,
-    'neutral-3': $neutral-color-3,
-    'neutral-2': $neutral-color-2,
-    'neutral-1': $neutral-color-1,
+    primary: $charte-primary,
+    accent: $charte-accent,
+    warn: $charte-warn,
   )
 ));
 
@@ -41,3 +32,4 @@ $charte-theme: mat.define-light-theme((
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include mat.all-component-themes($charte-theme);
+

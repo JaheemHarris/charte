@@ -1,0 +1,13 @@
+.exemple {
+    @apply h-full mx-auto border-2 border-gray-500;
+  }
+  
+
+  .mat-drawer {
+    @apply bg-primary !important;
+  }
+  
+  .mat-drawer-content {
+    background-color: white;
+  }
+  

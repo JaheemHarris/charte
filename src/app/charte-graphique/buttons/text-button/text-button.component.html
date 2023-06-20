@@ -1,0 +1,24 @@
+<button mat-button *ngIf="type === 'primary'" color="primary">
+  <ng-template *ngIf="type === 'primary'" [ngTemplateOutlet]="contentTemplate"></ng-template>
+</button>
+
+<button mat-button *ngIf="type === 'accent'">
+  <mat-label class="label">{{label}}</mat-label>
+</button>
+
+<button mat-button *ngIf="type === 'warn'" color="warn">
+  <ng-template *ngIf="type === 'warn'" [ngTemplateOutlet]="contentTemplate"></ng-template>
+</button>
+
+<button mat-button *ngIf="type === 'disabled'" disabled>
+  <ng-template *ngIf="type === 'disabled'" [ngTemplateOutlet]="contentTemplate"></ng-template>
+</button>
+
+<button mat-button *ngIf="type === 'perso'" 
+  class="cca-secondary-button border border-gray-500 rounded-md px-4 py-2 bg-white text text-green-500 hover:bg-green-500 hover:text-white">
+  <ng-template *ngIf="type === 'perso'" [ngTemplateOutlet]="contentTemplate"></ng-template>
+</button>
+
+<ng-template #contentTemplate>
+  <ng-content></ng-content>
+</ng-template>

@@ -1,0 +1,32 @@
+<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu"
+  (click)="handleButtonClick()">
+  <mat-icon>more_vert</mat-icon>
+</button>
+
+<mat-menu #menu="matMenu">
+  <div *ngIf="type === 'config'">
+    <button mat-menu-item class="menu-item" *ngFor="let item of menuItems; let i = index" [disabled]="item.disabled"
+      (click)="handleMenuItemSelect(item)" (mouseover)="handleMenuItemHover(i)" (mouseleave)="handleMenuItemLeave()">
+      <div class="menu-item-container">
+        <mat-icon>{{ item.icon }}</mat-icon>
+        <span>{{ item.label }}</span>
+        <mat-icon *ngIf="i === hoveredButtonIndex" class="hover-icon">info</mat-icon>
+      </div>
+    </button>
+  </div>
+
+  <div *ngIf="type === 'action'">
+    <button mat-menu-item class="menu-item" *ngFor="let item of menuItems; let i = index" [disabled]="item.disabled"
+      (click)="handleMenuItemSelect(item)" (mouseover)="handleMenuItemHover(i)" (mouseleave)="handleMenuItemLeave()">
+      <div class="menu-item-container">
+        <mat-icon *ngIf="item.label !== 'Delete'">{{ item.icon }}</mat-icon>
+        <span *ngIf="item.label !== 'Delete'">{{ item.label }}</span>
+        <mat-icon *ngIf="i === hoveredButtonIndex && item.label !== 'Delete'" class="hover-icon">info</mat-icon>
+        <mat-icon class="delete" *ngIf="item.label === 'Delete'">{{ item.icon }}</mat-icon>
+        <span class="delete" *ngIf="item.label === 'Delete'">{{ item.label }}
+        </span>
+        <mat-icon *ngIf="i === hoveredButtonIndex && item.label === 'Delete'" class="hover-icon">info</mat-icon>
+      </div>
+    </button>
+  </div>
+</mat-menu>

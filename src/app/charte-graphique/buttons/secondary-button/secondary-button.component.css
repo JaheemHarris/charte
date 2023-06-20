@@ -1,3 +1,23 @@
-    .cca-secondary-button{
-        @apply bg-white text-white border-gray-500 border-2 rounded-md px-4 py-2;
-    }
+  .button-perso:hover {
+    @apply bg-blue-50;
+  }
+  
+  .icon {
+    @apply text-blue-400;
+  }
+
+  .text {
+    @apply text-blue-400;
+  }
+
+  .prim_button {
+    @apply border border-primary !important;
+  }
+
+  .button-perso {
+    @apply border border-accent !important;
+  }
+
+  .warn_butt {
+    @apply border border-red-600 !important;
+  }

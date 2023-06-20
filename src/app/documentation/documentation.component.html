@@ -1,30 +1,34 @@
-<mat-divider></mat-divider>
+<flat-toolbar [color]="'primary'">
+  <span class="bg-gray text-gray-100"><b>CHARTE GRAPHIQUE</b></span>
+</flat-toolbar>
 <br>
-<section>
-  <div class="example-label">Principale</div>
-  <div class="example-button-row">
-    <cca-primary-button [type]="'primary'">Primary</cca-primary-button>
-    <cca-primary-button [type]="'accent'">Accent</cca-primary-button>
-    <cca-primary-button [type]="'warn'">Warning</cca-primary-button>
-    <cca-primary-button [type]="'disabled'">Disabled</cca-primary-button>
-    <cca-primary-button [type]="'perso'">Perso</cca-primary-button>
-  </div>
-</section>
+
+<flat-toolbar>
+  <!-- Contenu de la barre d'outils -->
+  <flat-button-text [type]="'perso'" (click)="navigateButton()">Button</flat-button-text>
+  <flat-button-text [type]="'perso'" (click)="navigatecheck()">Checkbox</flat-button-text>
+  <flat-button-text [type]="'perso'" (click)="navigateFont()">Font</flat-button-text>
+  <flat-button-text [type]="'perso'" (click)="navigateIcon()">Icon</flat-button-text>
+  <flat-button-text [type]="'perso'" (click)="navigateInput()">Input</flat-button-text>
+  <flat-button-text [type]="'perso'" (click)="navigateInputError()">Input-error</flat-button-text>
+  <flat-button-text [type]="'perso'" (click)="navigateMenu()">Menu</flat-button-text>
+  <flat-button-text [type]="'perso'" (click)="navigateSelect()">Select</flat-button-text>
+  <flat-button-text [type]="'perso'" (click)="navigateToggle()">Toggle</flat-button-text>
+  <flat-button-text [type]="'perso'" (click)="navigateTag()">Tag</flat-button-text>
+  <flat-button-text [type]="'perso'" (click)="navigateTooltip()">Tooltip</flat-button-text>
+  <flat-button-text [type]="'perso'" (click)="navigateToolbar()">Toolbar</flat-button-text>
+  <flat-button-text [type]="'perso'" (click)="navigateSidebar()">Sidebar</flat-button-text>
+  <flat-button-text [type]="'perso'" (click)="navigateStepper()">Stepper</flat-button-text>
+  <flat-button-text [type]="'perso'" (click)="navigateSnackbar()">Snackbar</flat-button-text>
+  <flat-button-text [type]="'perso'" (click)="navigatePaginator()">paginator</flat-button-text>
+  <flat-button-text [type]="'perso'" (click)="navigateMessage()">message</flat-button-text>
+</flat-toolbar>
+<flat-toolbar>
+  <!-- Contenu de la barre d'outils -->
+  <flat-button-text [type]="'perso'" (click)="successerror()">error/success</flat-button-text>
+  <flat-button-text [type]="'perso'" (click)="navigateChampsObli()">champs obli</flat-button-text>
+  <flat-button-text [type]="'perso'" (click)="navigateModal()">Modal</flat-button-text>
+</flat-toolbar>
+
 <br>
-<mat-divider></mat-divider>
-<br>
-<section>
-  <div class="example-label">Second</div>
-  <div class="example-button-row">
-    <cca-secondary-button [type]="'primary'">Primary</cca-secondary-button>
-    <cca-secondary-button [type]="'accent'">Accent</cca-secondary-button>
-    <cca-secondary-button [type]="'warn'">Warning</cca-secondary-button>
-    <cca-secondary-button [type]="'disabled'">Disabled</cca-secondary-button>
-    <cca-secondary-button [type]="'perso'">Perso</cca-secondary-button>
-  </div>
-</section>
-<br>
-<mat-divider></mat-divider>
-<br>
-<!-- Fa manina oa ty bg-red ty tsy mandeha mitsy -->
-<p class="bg-red">bg-red</p>
+<router-outlet></router-outlet>

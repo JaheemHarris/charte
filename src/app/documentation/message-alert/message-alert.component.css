@@ -1,0 +1,23 @@
+.custom-snackbar {
+    --mdc-snackbar-container-color: white !important;
+    --mdc-snackbar-supporting-text-color: initial !important;
+    --mat-snack-bar-button-color: initial !important;
+  }
+  
+  .custom-snackbar{
+    @apply bg-white border border-perso rounded-md h-20;
+  }
+
+  .custom-snackbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5mm;
+    height: 100%;
+    @apply bg-perso;
+    z-index: 1;
+  }
+
+  
+

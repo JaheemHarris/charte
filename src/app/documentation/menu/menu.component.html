@@ -1,0 +1,31 @@
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label"> Menu with icon</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <flat-menu-icon [type]="'config'" [menuItems]="list" (buttonClick)="handleButtonClick()"
+        (redialClick)="handleHomeClick()" (voicemailClick)="handleSettingsClick()"
+        (disableAlertsClick)="handleHelpClick()">
+      </flat-menu-icon>
+      <flat-menu-icon [type]="'action'" [menuItems]="action" (buttonClick)="handleButtonClick()"
+        (editclick)="EditClick()" (deleteclick)="DeleteClick()" (closeclick)="CloseClick()"
+        (archiveclick)="ArchiveClick()" (shareclick)="ShareClick()">
+      </flat-menu-icon>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label"> Menu with button</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <flat-menu-button [buttonLabel]="buttonLabel" [menuItems]="menuItems"
+        (menuItemClicked)="onMenuItemClicked($event)"></flat-menu-button>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>

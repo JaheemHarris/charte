@@ -1,0 +1,22 @@
+.menu-item:hover {
+    @apply bg-blue-200;
+  }
+
+.menu-item-container:hover,
+.menu-item-container:hover mat-icon {
+  @apply text-blue-700
+}
+
+
+.delete {
+    @apply text-red-500;
+}
+
+.menu-item-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .hover-icon {
+    margin-left: 8px;
+  }

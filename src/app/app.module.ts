@@ -3,8 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TooltipModule } from './tooltip/tooltip.module';
-import { ButtonsModule } from './charte-graphique/buttons/buttons.module';
+import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -14,8 +15,8 @@ import { ButtonsModule } from './charte-graphique/buttons/buttons.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    ButtonsModule,
-    TooltipModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

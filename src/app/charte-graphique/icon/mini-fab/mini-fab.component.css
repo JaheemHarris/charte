@@ -1,0 +1,7 @@
+.cca-icon-mini-fab{
+    @apply bg-perso;
+}
+
+.accent_color {
+    @apply bg-accent;
+}

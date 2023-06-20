@@ -1,0 +1,13 @@
+<flat-tag label="Tag 1" color="primary" [type]="'basic'"></flat-tag>
+<flat-tag label="Tag 2" color="accent" [type]="'basic'" [removable]="true"></flat-tag>
+<flat-tag label="Tag 3" color="warn" [type]="'basic'"></flat-tag>
+<flat-tag label="Tag 2" color="accent" [type]="'basic'" [removable]="true"></flat-tag>
+
+<br> <br>
+
+<flat-tag [type]="'chipList'">
+    <mat-chip-option>One fish</mat-chip-option>
+    <mat-chip-option>Two fish</mat-chip-option>
+    <mat-chip-option class="persochip" selected>Accent fish</mat-chip-option>
+    <mat-chip-option color="warn">Warn fish</mat-chip-option>
+</flat-tag>
