@@ -1,0 +1,16 @@
+<div class="custom-error-alert">
+  <div class="custom-error-content">
+    <div class="error-icon">
+      <img width="50" height="50" src="error-icon.svg" alt="cancel"/>
+    </div>
+    <div class="error-message">
+      <span class="error-title">{{title}}</span>
+      <span class="error-phrase">{{message}}</span>
+    </div>
+  </div>
+  <div class="custom-error-action">
+    <div class="error-action" (click)="dismiss()">
+      {{action}}
+    </div>
+  </div>
+</div>

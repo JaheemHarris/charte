@@ -1,3 +1,18 @@
 .test-style{
     @apply bg-secondary text-gray-600;
 }
+::ng-deep .snack{
+    background-color: white !important;
+    color: black;
+}
+
+
+::ng-deep .mat-mdc-snack-bar-container{
+    background-color: white !important;
+    color: black;
+}
+
+::ng-deep .snack .mat-mdc-snack-bar-container{
+    background-color: white !important;
+    color: black;
+}
