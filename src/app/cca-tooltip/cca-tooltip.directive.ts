@@ -5,7 +5,6 @@ import { Directive, ElementRef, HostListener, Input, Renderer2 } from '@angular/
 })
 export class CcaTooltipDirective {
   private tooltip!: HTMLElement;
-  private caller!: HTMLElement;
 
   @Input('tooltipContent')
   tooltipContent!: string;
@@ -27,7 +26,6 @@ export class CcaTooltipDirective {
 
   private createTooltip() {
     this.tooltip = this.renderer.createElement('div');
-    console.log(this.caller);
     this.renderer.addClass(this.tooltip, 'cca-tooltip');
     if (this.tooltipCustomClass) {
       this.renderer.addClass(this.tooltip, this.tooltipCustomClass);
@@ -51,7 +49,12 @@ export class CcaTooltipDirective {
       tooltipLeft = callerRect.left - tooltipRect.width - 40;
     }
   
-    const tooltipTop = callerBottom - tooltipHeight;
+    let tooltipTop = callerBottom - tooltipHeight; // Default position below the caller
+
+    if (callerRect.top - tooltipHeight < 0) {
+      // Tooltip exceeds upper end of the page, reposition below the caller
+      tooltipTop = callerRect.bottom + 30;
+    }
   
     this.renderer.setStyle(this.tooltip, 'top', `${tooltipTop}px`);
     this.renderer.setStyle(this.tooltip, 'left', `${tooltipLeft}px`);
