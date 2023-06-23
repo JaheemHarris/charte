@@ -7,6 +7,9 @@ import { TooltipModule } from './tooltip/tooltip.module';
 import { ButtonsModule } from './charte-graphique/buttons/buttons.module';
 import { MessagesModule } from './messages/messages.module';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { CcaTooltipDirective } from './cca-tooltip/cca-tooltip.directive';
+import { CcaTooltipModule } from './cca-tooltip/cca-tooltip.module';
 
 
 @NgModule({
@@ -19,7 +22,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     ButtonsModule,
     TooltipModule,
     MessagesModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatTooltipModule,
+    CcaTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

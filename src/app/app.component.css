@@ -1,4 +1,4 @@
-.test-style{
+/* .test-style{
     @apply bg-secondary text-gray-600;
 }
 ::ng-deep .snack{
@@ -15,4 +15,32 @@
 ::ng-deep .snack .mat-mdc-snack-bar-container{
     background-color: white !important;
     color: black;
+} */
+
+mat-tooltip-component {
+    /* your own custom styles here */ 
+    /* e.g. */
+    background: #FFFFFF;
+}
+
+/* .test-tooltip{
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.mdc-tooltip::before{
+    background: #FFFFFF;
+} 
+.mdc-tooltip .mdc-tooltip--shown .mat-mdc-tooltip .test-tooltip .mat-mdc-tooltip-show::before{
+    background: #FFFFFF;
+} */
+
+.mdc-tooltip__surface.mdc-tooltip__surface-animation{
+    background-color: #FFFFFF;
+    color: #000000;
+    box-shadow:  0 2px 4px rgba(0, 0, 0, 0.3);
+    max-height: none;
+    max-width: 400px;
 }

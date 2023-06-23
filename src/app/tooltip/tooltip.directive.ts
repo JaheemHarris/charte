@@ -12,7 +12,6 @@ export class TooltipDirective {
   tooltipBgColor!: string;
   @Input('tooltipTextColor')
   tooltipTextColor!: string;
-  @Input('tooltipPosition') tooltipPosition: 'left' | 'right' | 'above' | 'below' = 'right';
 
   tooltipElement!: HTMLElement;
 
@@ -28,9 +27,8 @@ export class TooltipDirective {
 
   showTooltip() {
     this.tooltipElement = this.renderer.createElement('div');
-    this.tooltipElement.className = 'tooltip';
+    this.tooltipElement.className = 'cca-tooltip right';
     this.setTooltipContent();
-    this.setTooltipPosition();
 
     if (this.tooltipBgColor) {
       this.renderer.setStyle(this.tooltipElement, 'background-color', this.tooltipBgColor);
@@ -56,9 +54,5 @@ export class TooltipDirective {
     } else if (this.tooltipTextContent) {
       this.tooltipElement.textContent = this.tooltipTextContent;
     }
-  }
-
-  private setTooltipPosition() {
-    // this.renderer.addClass(this.tooltipElement, `tooltip-${this.tooltipPosition}`);
   }
 }
