@@ -1,13 +1,15 @@
 import { Component, Input } from '@angular/core';
-import { PrimaryButtonType } from '../primary-button/primary-button.type';
+import { SecondaryButtonType } from './secondary-button.type';
 
 @Component({
-  selector: 'cca-secondary-button',
+  selector: 'flat-button-secondary',
   templateUrl: './secondary-button.component.html',
   styleUrls: ['./secondary-button.component.css']
 })
 export class SecondaryButtonComponent {
 
-  @Input() type: PrimaryButtonType = 'primary';
+  @Input() type: SecondaryButtonType = 'primary';
+  @Input() icon: string = '';
+  @Input() label: string = '';
 
 }

@@ -1,0 +1,8 @@
+.perso {
+    --mat-radio-checked-ripple-color: #45ff6d;
+    --mdc-radio-selected-focus-icon-color: #45ff6d;
+    --mdc-radio-selected-hover-icon-color: #45ff6d;
+    --mdc-radio-selected-icon-color: #45ff6d;
+    --mdc-radio-selected-pressed-icon-color: #45ff6d;
+}
+

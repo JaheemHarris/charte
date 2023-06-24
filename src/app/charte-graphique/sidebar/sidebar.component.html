@@ -1,0 +1,10 @@
+<mat-drawer-container class="exemple" *ngIf="type === 'basic'" >
+  <mat-drawer class="basic" mode="side" opened style="width: {{width}};">
+    <!-- Contenu de la barre latérale -->
+    <ng-content select="[sidenavContent]"></ng-content>
+  </mat-drawer>
+  <mat-drawer-content>
+    <!-- Contenu principal -->
+    <ng-content></ng-content>
+  </mat-drawer-content>
+</mat-drawer-container>

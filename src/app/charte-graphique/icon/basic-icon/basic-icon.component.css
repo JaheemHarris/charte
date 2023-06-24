@@ -1,0 +1,7 @@
+.perso {
+    @apply text-perso !important;
+}
+
+.accent {
+    @apply text-accent !important;
+}

@@ -1,0 +1,36 @@
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label"> select simple</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <flat-select-simple [label]="'select simple'" [list]="list"
+        (valueChange)="onValueChange($event)"></flat-select-simple>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label"> select multiple basic</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <flat-select-multiple [toppingList]="toppingList" [type]="'basic'" [label]="'select multiple'"
+        (selectedValuesChanged)="logSelectedValues($event)"></flat-select-multiple>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>
+<br>
+<section style="width: 800px;">
+  <div class="example-label"> select multiple thematics</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <flat-select-multiple [type]="'thematics'" [options]="yourOptions" (selectedValuesThematicsChange)="onSelectedValuesThematicsChange($event)"></flat-select-multiple>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>

@@ -1,0 +1,13 @@
+<mat-button-toggle-group name="fontStyle" aria-label="Font Style" *ngIf="type === 'multiple'" >
+  <mat-button-toggle *ngFor="let option of options" [value]="option.value" (click)="toggleButtonColor(option)"
+    [ngClass]="{ 'active-button': option.active, 'rounded-lg': option.active }">
+    {{ option.label }}
+  </mat-button-toggle>
+</mat-button-toggle-group>
+
+<mat-button-toggle-group class="class" name="fontStyle" aria-label="Font Style" *ngIf="type === 'double'">
+  <mat-button-toggle *ngFor="let option of options" [value]="option.value" (click)="toggleButtonColor(option)"
+    [ngClass]="{ 'active-button-double': option.active, 'rounded-full': option.active, 'transparent-separator': option.separatorVisible }">
+    {{ option.label }}
+  </mat-button-toggle>
+</mat-button-toggle-group>

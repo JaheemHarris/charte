@@ -1,0 +1,41 @@
+<flat-stepper
+  [stepperOrientation]="'horizontal'"
+  [step1Label]="'Step 1'"
+  [step1ErrorMessage]="'Name is required.'"
+  [step1Placeholder]="'Enter your name'"
+  [step1FormControlValue]="''"
+  [step1NextButtonText]="'Next'"
+  [step2Label]="'Step 2'"
+  [step2ErrorMessage]="'Address is required.'"
+  [step2Placeholder]="'Enter your address'"
+  [step2FormControlValue]="''"
+  [step2BackButtonText]="'Back'"
+  [step2NextButtonText]="'Next'"
+  [finalStepLabel]="'Final Step'"
+  [finalStepMessage]="'You are now done.'"
+  [finalStepBackButtonText]="'Back'"
+  [resetButtonText]="'Reset'"
+  (formValuesChange)="handleFormValuesChange($event)"
+></flat-stepper>
+<br>
+<mat-divider></mat-divider>
+<br>
+<flat-stepper
+  [stepperOrientation]="'vertical'"
+  [step1Label]="'Step 1'"
+  [step1ErrorMessage]="'Name is required.'"
+  [step1Placeholder]="'Enter your name'"
+  [step1FormControlValue]="''"
+  [step1NextButtonText]="'Next'"
+  [step2Label]="'Step 2'"
+  [step2ErrorMessage]="'Address is required.'"
+  [step2Placeholder]="'Enter your address'"
+  [step2FormControlValue]="''"
+  [step2BackButtonText]="'Back'"
+  [step2NextButtonText]="'Next'"
+  [finalStepLabel]="'Final Step'"
+  [finalStepMessage]="'You are now done.'"
+  [finalStepBackButtonText]="'Back'"
+  [resetButtonText]="'Reset'"
+  (formValuesChange)="handleFormValuesChange($event)"
+></flat-stepper>

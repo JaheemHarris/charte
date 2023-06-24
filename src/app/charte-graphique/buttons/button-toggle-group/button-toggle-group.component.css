@@ -1,0 +1,15 @@
+.active-button {
+    @apply bg-blue-500 text-white rounded-lg;
+  }
+  
+.active-button-double {
+  @apply bg-blue-500 text-white rounded-full;
+}
+
+.class {
+  @apply rounded-full;
+}
+
+.transparent-separator {
+  @apply border-transparent	!important;
+}

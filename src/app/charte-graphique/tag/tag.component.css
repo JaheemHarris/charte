@@ -1,0 +1,25 @@
+.selected {
+    background-color: #ff0000; /* Exemple de style pour une balise sélectionnée */
+    color: #ffffff;
+    /* Ajoutez ici d'autres styles personnalisés pour votre balise */
+  }
+  
+  .perso {
+    @apply bg-perso !important;
+  }
+  
+  .orange{
+    @apply bg-orange-600 !important;
+  }
+
+  .warn {
+    @apply bg-error !important;
+  }
+  
+  .primary{
+    @apply bg-primary !important;
+  }
+
+  .neutral{
+    @apply bg-neutral2 !important;
+  }

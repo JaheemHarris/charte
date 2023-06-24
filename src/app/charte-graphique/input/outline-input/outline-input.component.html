@@ -1,0 +1,14 @@
+<form class="outline-input" style="width: {{widthInput}}px">
+  <mat-form-field class="example-full-width" appearance="outline" *ngIf="type === 'simple'">
+    <div class="input-container flex">
+      <input matInput [placeholder]="placeholder" [value]="inputValue" (input)="onInputChange($event)">
+      <button mat-button *ngIf="inputValue" matSuffix mat-icon-button aria-label="Clear" (click)="clearInput()">
+        <mat-icon>cancel</mat-icon>
+      </button>
+    </div>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" appearance="outline" *ngIf="type === 'text'">
+    <textarea matInput [placeholder]="placeholder" [value]="inputValue" (input)="onInputChange($event)"></textarea>
+  </mat-form-field>
+</form>

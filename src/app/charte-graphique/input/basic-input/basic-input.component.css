@@ -1,0 +1,14 @@
+.example-form {
+    min-width: 150px;
+    max-width: 2500px;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  .input-container {
+    display: flex;
+    align-items: center;
+  }
+  

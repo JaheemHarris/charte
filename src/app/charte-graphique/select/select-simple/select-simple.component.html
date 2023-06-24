@@ -1,0 +1,9 @@
+<form class="simple-input"></form>
+<mat-form-field class="example-full-width">
+  <mat-label>{{label}}</mat-label>
+  <mat-select (selectionChange)="onSelectionChange($event.value)">
+    <mat-option *ngFor="let item of list" [value]="item.value">
+      {{item.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

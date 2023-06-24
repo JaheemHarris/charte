@@ -1,30 +1,44 @@
-<mat-divider></mat-divider>
+<flat-toolbar [color]="'primary'">
+  <span class="bg-gray text-gray-100"><b>CHARTE GRAPHIQUE</b></span>
+</flat-toolbar>
 <br>
-<section>
-  <div class="example-label">Principale</div>
-  <div class="example-button-row">
-    <cca-primary-button [type]="'primary'">Primary</cca-primary-button>
-    <cca-primary-button [type]="'accent'">Accent</cca-primary-button>
-    <cca-primary-button [type]="'warn'">Warning</cca-primary-button>
-    <cca-primary-button [type]="'disabled'">Disabled</cca-primary-button>
-    <cca-primary-button [type]="'perso'">Perso</cca-primary-button>
-  </div>
-</section>
+
+<flat-toolbar>
+  <!-- Contenu de la barre d'outils -->
+  <ul>
+    <li>
+      <a [routerLink]="['./couleur']" routerLinkActive="active">Couleur</a>
+      <a [routerLink]="['./bouton']" routerLinkActive="active">Button</a>
+      <a [routerLink]="['./checkbox']" routerLinkActive="active">Checkbox</a>
+      <a [routerLink]="['./font']" routerLinkActive="active">Font</a>
+      <a [routerLink]="['./icon']" routerLinkActive="active">Icon</a>
+      <a [routerLink]="['./input']" routerLinkActive="active">Input</a>
+      <a [routerLink]="['./input-error']" routerLinkActive="active">Input Error</a>
+      <a [routerLink]="['./menu']" routerLinkActive="active">Menu</a>
+      <a [routerLink]="['./select']" routerLinkActive="active">Select</a>
+      <a [routerLink]="['./toggle']" routerLinkActive="active">Toggle</a>
+      <a [routerLink]="['./tag']" routerLinkActive="active">Tag</a>
+      <a [routerLink]="['./tooltip']" routerLinkActive="active">Tooltip</a>
+      <a [routerLink]="['./toolbar']" routerLinkActive="active">ToolBar</a>
+      <a [routerLink]="['./sidebar']" routerLinkActive="active">Sidebar</a>
+      <a [routerLink]="['./stepper']" routerLinkActive="active">Stepper</a>
+      <a [routerLink]="['./snackbar']" routerLinkActive="active">Snanckbar</a>
+      <a [routerLink]="['./pagination']" routerLinkActive="active">Paginator</a>
+    </li>
+  </ul>
+
+</flat-toolbar>
+<flat-toolbar>
+  <ul>
+    <li>
+      <a [routerLink]="['./success-error']" routerLinkActive="active">Success/error</a>
+      <a [routerLink]="['./modal']" routerLinkActive="active">Modal</a>
+      <a [routerLink]="['./champs-obligatoire']" routerLinkActive="active">Champs obli</a>
+    </li>
+  </ul>
+  <!-- Contenu de la barre d'outils -->
+
+</flat-toolbar>
+
 <br>
-<mat-divider></mat-divider>
-<br>
-<section>
-  <div class="example-label">Second</div>
-  <div class="example-button-row">
-    <cca-secondary-button [type]="'primary'">Primary</cca-secondary-button>
-    <cca-secondary-button [type]="'accent'">Accent</cca-secondary-button>
-    <cca-secondary-button [type]="'warn'">Warning</cca-secondary-button>
-    <cca-secondary-button [type]="'disabled'">Disabled</cca-secondary-button>
-    <cca-secondary-button [type]="'perso'">Perso</cca-secondary-button>
-  </div>
-</section>
-<br>
-<mat-divider></mat-divider>
-<br>
-<!-- Fa manina oa ty bg-red ty tsy mandeha mitsy -->
-<p class="bg-red">bg-red</p>
+<router-outlet></router-outlet>

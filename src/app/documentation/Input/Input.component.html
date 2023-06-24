@@ -1,0 +1,57 @@
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label"> basic simple</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <flat-basic-input [label]="'favorite food'" [widthInput] ="'500'" [placeholder]="'this is pizza'" [type]="'basic'" (valueChanged)="onInputValueChanged($event)"></flat-basic-input>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label"> basic text</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <flat-basic-input [label]="'second label'" [widthInput] ="'1000'" [placeholder]="'second placeholder'" [type]="'text'" (valueChanged)="onInputValueChangedtext($event)"></flat-basic-input>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label"> outline simple</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <flat-outline-input [placeholder]="'placeholder'" [widthInput] ="'700'" [type]="'simple'" (valueChanged)="onInputValueChangedSimple($event)"></flat-outline-input>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label"> outline text</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <flat-outline-input [placeholder]="'placeholder'" [type]="'text'" [widthInput] ="'800'" (valueChanged)="onInputValueChangedOutText($event)"></flat-outline-input>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>
+<br>
+<section>
+  <div class="example-label"> Date Picker Simple</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <flat-date-picker (dateChange)="onDateSelected($event)"></flat-date-picker>
+    </div>
+  </div>
+</section>
+<br>
+<mat-divider></mat-divider>
+

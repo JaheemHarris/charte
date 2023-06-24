@@ -1,0 +1,17 @@
+.cca-checkbox .mat-checkbox-checked .mat-checkbox-background {
+  @apply bg-green-500 !important; /* Couleur verte pour la case cochée */
+}
+
+.mat-mdc-checkbox .mdc-form-field {
+  color: var(--mdc-theme-text-primary-on-background, rgba(0, 0, 0, 0.87)) !important;
+}
+
+.cca-checkbox, .custom-checkbox {
+  --mdc-checkbox-selected-icon-color: #45ff6d !important;
+  --mdc-checkbox-selected-focus-icon-color: #45ff6d;
+    --mdc-checkbox-selected-hover-icon-color: #45ff6d;
+    --mdc-checkbox-selected-checkmark-color: #fff;
+    --mdc-checkbox-selected-focus-state-layer-color: #45ff6d;
+    --mdc-checkbox-selected-hover-state-layer-color: #45ff6d;
+    --mdc-checkbox-selected-pressed-state-layer-color: #45ff6d;
+}

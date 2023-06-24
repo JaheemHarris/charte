@@ -1,0 +1,31 @@
+flat-button-primary, flat-basic-icon, span {
+  margin: 40px 40px 40px 0;
+}
+
+
+.mdc-tooltip__surface.mdc-tooltip__surface-animation{
+    background-color: #FFFFFF;
+    color: #000000;
+    box-shadow:  0 2px 4px rgba(0, 0, 0, 0.3);
+    max-height: none;
+    max-width: 400px;
+}
+mat-tooltip-component {
+    /* your own custom styles here */ 
+    /* e.g. */
+    background: #FFFFFF;
+}
+
+/* .test-tooltip{
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.mdc-tooltip::before{
+    background: #FFFFFF;
+} 
+.mdc-tooltip .mdc-tooltip--shown .mat-mdc-tooltip .test-tooltip .mat-mdc-tooltip-show::before{
+    background: #FFFFFF;
+} */

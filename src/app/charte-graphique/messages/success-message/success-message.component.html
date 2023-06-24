@@ -1,0 +1,18 @@
+<div class="custom-success-alert" [style.top]="position === 'top' ? '0' : 'auto'" [style.bottom]="position === 'bottom' ? '0' : 'auto'"
+[style.margin-top]="position === 'top' ? '20px' : '0'" [style.margin-bottom]="position === 'bottom' ? '20px' : '0'">
+    <div class="custom-success-content">
+      <div class="success-icon">
+        <mat-icon (click)="dismiss()">check_circle</mat-icon>
+      </div>
+      <div class="success-message">
+        <span class="success-title">{{title}}</span>
+        <span class="success-phrase">{{message}}</span>
+      </div>
+    </div>
+    <div class="custom-success-action">
+      <div class="success-action">
+        <button (click)="dismiss()">{{action}}</button>
+      </div>
+    </div>
+  </div>
+  
