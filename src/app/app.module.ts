@@ -10,6 +10,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { CcaTooltipDirective } from './cca-tooltip/cca-tooltip.directive';
 import { CcaTooltipModule } from './cca-tooltip/cca-tooltip.module';
+import { TestTooltipModule } from './test-tooltip/test-tooltip.module';
+import { DragDropFileUploadModule } from './drag-drop-file-upload/drag-drop-file-upload.module';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { CcaTooltipModule } from './cca-tooltip/cca-tooltip.module';
     MessagesModule,
     MatSnackBarModule,
     MatTooltipModule,
-    CcaTooltipModule
+    CcaTooltipModule,
+    TestTooltipModule,
+    DragDropFileUploadModule
   ],
   providers: [],
   bootstrap: [AppComponent]

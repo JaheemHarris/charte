@@ -37,10 +37,10 @@ mat-tooltip-component {
     background: #FFFFFF;
 } */
 
-.mdc-tooltip__surface.mdc-tooltip__surface-animation{
+/* .mdc-tooltip__surface.mdc-tooltip__surface-animation{
     background-color: #FFFFFF;
     color: #000000;
     box-shadow:  0 2px 4px rgba(0, 0, 0, 0.3);
     max-height: none;
     max-width: 400px;
-}
+} */
