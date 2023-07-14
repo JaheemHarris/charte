@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LineTrendModule } from './line-trend/line-trend.module';
+import { ErrorTrendModule } from './error-trend/error-trend.module';
 
 
 
@@ -8,10 +9,12 @@ import { LineTrendModule } from './line-trend/line-trend.module';
   declarations: [],
   imports: [
     CommonModule,
-    LineTrendModule
+    LineTrendModule,
+    ErrorTrendModule
   ],
   exports: [
-    LineTrendModule
+    LineTrendModule,
+    ErrorTrendModule
   ]
 })
 export class LinesModule { }
