@@ -23,6 +23,10 @@ mat-tooltip-component {
     background: #FFFFFF;
 }
 
+#chart{
+    width: 100%;
+}
+
 /* .test-tooltip{
     background-color: #FFFFFF !important;
     color: #000000 !important;

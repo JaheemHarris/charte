@@ -12,6 +12,7 @@ import { CcaTooltipDirective } from './cca-tooltip/cca-tooltip.directive';
 import { CcaTooltipModule } from './cca-tooltip/cca-tooltip.module';
 import { TestTooltipModule } from './test-tooltip/test-tooltip.module';
 import { DragDropFileUploadModule } from './drag-drop-file-upload/drag-drop-file-upload.module';
+import { GraphiqueModule } from './graphique/graphique.module';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { DragDropFileUploadModule } from './drag-drop-file-upload/drag-drop-file
     MatTooltipModule,
     CcaTooltipModule,
     TestTooltipModule,
-    DragDropFileUploadModule
+    DragDropFileUploadModule,
+    GraphiqueModule
   ],
   providers: [],
   bootstrap: [AppComponent]
